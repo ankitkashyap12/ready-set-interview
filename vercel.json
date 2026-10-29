@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/revision/index.html" },
+    { "source": "/catalog.json", "destination": "/revision/catalog.json" },
+    { "source": "/styles.css", "destination": "/revision/styles.css" },
+    { "source": "/app.js", "destination": "/revision/app.js" }
+  ]
+}
