@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         //return brute(piles,h);
@@ -5,28 +7,30 @@ class Solution {
     }
 
 
-    static int binarySearch(int[] banana,int h){
-        // in an array of 1..maxRate(max num of banans in pile), search which takes lowest time.
-        int left=1;
-        int right= Arrays.stream(banana).max().getAsInt();
-        while(left<right){
-            int mid=(left+right)/2;
-            if(timeTaken(banana,mid) > h){
-                left=mid+1;
-            }
-            else{
-                right=mid;
+    static int binarySearch(int[] banana, int h) {
+        // Binary search on the answer space: range [1, max(piles)]
+        int left = 1;
+        int right = 0;
+        for (int p : banana) {
+            right = Math.max(right, p);
+        }
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (timeTaken(banana, mid) > h) {
+                left = mid + 1; // Eating too slowly, need higher speed
+            } else {
+                right = mid; // Can finish in h hours, try a smaller speed
             }
         }
         return left;
-
     }
 
-    public static int  timeTaken(int[] banana,int rate){
-        int time=0;
-        for(int numOfBanana: banana){
-            time+=(numOfBanana/rate)+(numOfBanana%rate==0?0:1);
-
+    public static long timeTaken(int[] banana, int rate) {
+        long time = 0;
+        for (int numOfBanana : banana) {
+            // Ceiling division: (numOfBanana + rate - 1) / rate
+            time += (long) (numOfBanana + rate - 1) / rate;
         }
         return time;
     }

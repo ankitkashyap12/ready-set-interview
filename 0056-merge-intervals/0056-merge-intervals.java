@@ -1,7 +1,13 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class Solution {
     public int[][] merge(int[][] intervals) {
-        //return getMergedIntervals2(intervals);
-        return getMerged2( intervals);
+        if (intervals == null || intervals.length <= 1) {
+            return intervals;
+        }
+        return getMerged2(intervals);
     }
 
     int[][] getMergedIntervals(int[][] intervals){

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="A local-first flash-card study space for revising data structures and algorithms.">
+    <title>Recall — DSA Revision Deck</title>
+    <link rel="stylesheet" href="./styles.css?v=4">
+    <script src="./app.js?v=4" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Recall home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>recall<span class="brand-period">.</span></span>
+        </a>
+        <div class="topbar-meta">
+          <span class="local-badge"><span aria-hidden="true"></span> Private · saved on this device</span>
+          <button class="repo-link text-link-btn" id="repo-readme-btn" type="button">
+            <span aria-hidden="true">📖</span> Problem repository
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro">
+          <div>
+            <p class="eyebrow">YOUR LAST-MINUTE DSA DESK</p>
+            <h1>Know it before<br><span>you need it.</span></h1>
+            <p class="intro-copy">Retrieve the idea first. Unfold progressive hints. Practice interview recall before opening code.</p>
+          </div>
+          <div class="session-summary-box">
+            <div class="session-summary" aria-label="Study progress">
+              <div class="summary-item">
+                <span class="summary-value" id="due-count">—</span>
+                <span class="summary-label">ready to review</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-item">
+                <span class="summary-value" id="reviewed-count">—</span>
+                <span class="summary-label">recalled today</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-item">
+                <span class="summary-value" id="mastered-count">—</span>
+                <span class="summary-label">mastered</span>
+              </div>
+            </div>
+            <div class="mastery-bar-container" title="Overall mastery progress">
+              <div class="mastery-bar">
+                <div class="mastery-fill mastered-fill" id="bar-mastered" style="width: 0%"></div>
+                <div class="mastery-fill learning-fill" id="bar-learning" style="width: 0%"></div>
+              </div>
+              <div class="mastery-legend">
+                <span class="legend-dot dot-mastered"></span> Mastered
+                <span class="legend-dot dot-learning"></span> In Progress
+                <span class="legend-dot dot-unseen"></span> Unreviewed
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="study-layout" aria-label="DSA flash cards">
+          <aside class="library-panel">
+            <div class="library-heading">
+              <div>
+                <p class="eyebrow">YOUR LIBRARY</p>
+                <h2>Pick a problem</h2>
+              </div>
+              <span class="count-pill" id="problem-count">—</span>
+            </div>
+
+            <label class="search-box">
+              <span class="sr-only">Search problems</span>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Search title, pattern, topic, #..." autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+
+            <div class="filter-grid">
+              <div>
+                <label for="group-filter" class="filter-label">Collection</label>
+                <select id="group-filter">
+                  <option value="">All collections</option>
+                </select>
+              </div>
+              <div>
+                <label for="topic-filter" class="filter-label">Topic</label>
+                <select id="topic-filter">
+                  <option value="">All topics</option>
+                </select>
+              </div>
+              <div>
+                <label for="difficulty-filter" class="filter-label">Difficulty</label>
+                <select id="difficulty-filter">
+                  <option value="">All levels</option>
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Hard">Hard</option>
+                </select>
+              </div>
+              <div>
+                <label for="status-filter" class="filter-label">Curated / Status</label>
+                <select id="status-filter">
+                  <option value="all">All problems</option>
+                  <option value="frequently-asked">🔥 Frequently Asked</option>
+                  <option value="due">Due to review</option>
+                  <option value="new">Not reviewed</option>
+                  <option value="mastered">Mastered</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="list-caption">
+              <span id="results-label">All problems</span>
+              <button class="text-button" id="shuffle-button" type="button">Surprise me <span aria-hidden="true">↗</span></button>
+            </div>
+            <nav class="problem-list" id="problem-list" aria-label="Problem cards"></nav>
+            <p class="empty-list" id="empty-list" hidden>No matches. Try another search or filter.</p>
+          </aside>
+
+          <section class="card-column" aria-live="polite">
+            <div class="card-toolbar">
+              <div class="breadcrumb" id="card-breadcrumb">Loading your cards</div>
+              <div class="card-toolbar-links">
+                <a class="source-link" id="lc-top-link" href="#" target="_blank" rel="noreferrer" hidden>LeetCode <span aria-hidden="true">↗</span></a>
+                <button class="source-link text-link-btn" id="readme-modal-btn" type="button">
+                  <span aria-hidden="true">📄</span> Problem README
+                </button>
+                <a class="source-link" id="readme-raw-link" href="#" target="_blank" rel="noreferrer">Raw ↗</a>
+              </div>
+            </div>
+
+            <article class="flash-card" id="flash-card" aria-labelledby="card-title">
+              <div class="card-topline">
+                <div class="card-topline-left">
+                  <span class="card-number-badge" id="card-number">#001</span>
+                  <span class="difficulty-pill" id="card-difficulty">Medium</span>
+                  <span class="freq-pill" id="card-freq-pill" hidden title="Frequently asked in technical interviews">
+                    <span aria-hidden="true">🔥</span> Top Asked
+                  </span>
+                  <span class="card-type"><span aria-hidden="true">✳</span> ACTIVE RECALL</span>
+                </div>
+                <div class="card-topline-right">
+                  <a class="lc-pill" id="card-lc-pill" target="_blank" rel="noreferrer" hidden>
+                    <span class="lc-pill-icon">LC</span>
+                    <span id="card-lc-text">LeetCode ↗</span>
+                  </a>
+                  <span class="review-state" id="review-state"></span>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <div class="badge-cluster" id="badge-cluster">
+                  <span class="cluster-badge topic-badge" id="card-topic">Topic</span>
+                  <span class="cluster-badge pattern-badge" id="card-pattern">Pattern</span>
+                </div>
+
+                <h2 id="card-title">Loading…</h2>
+
+                <div class="recall-prompt">
+                  <span class="prompt-label">BEFORE YOU REVEAL</span>
+                  <div class="prompt-copy" id="card-prompt"></div>
+                  <p class="recall-hint">Try to mentally state the pattern, the invariant, and boundary edge cases.</p>
+                </div>
+
+                <!-- Progressive Hints Drawer -->
+                <div class="hints-drawer" id="hints-drawer" hidden>
+                  <div class="hints-header">
+                    <button class="hint-toggle-button" id="hint-toggle-button" type="button">
+                      <span class="hint-bulb" aria-hidden="true">💡</span>
+                      <span id="hint-btn-label">Need a hint? (H)</span>
+                    </button>
+                    <span class="hint-counter" id="hint-counter"></span>
+                  </div>
+                  <div class="hints-body" id="hints-body" hidden>
+                    <div class="hints-stack" id="hints-stack"></div>
+                    <button class="next-hint-button" id="next-hint-button" type="button" hidden>Reveal next hint ↓</button>
+                  </div>
+                </div>
+
+                <button class="reveal-button" id="reveal-button" type="button">
+                  Reveal the approach <span aria-hidden="true">↓</span>
+                </button>
+
+                <div class="answer" id="answer" hidden>
+                  <div class="answer-heading">
+                    <span class="eyebrow">THE RECALL CHECK</span>
+                    <span class="answer-rule"></span>
+                  </div>
+
+                  <div class="answer-grid" id="answer-grid"></div>
+
+                  <section class="code-section">
+                    <div class="code-heading">
+                      <div>
+                        <p class="eyebrow">SOLUTION REFERENCE</p>
+                        <h3>Check your implementation</h3>
+                      </div>
+                      <div class="code-actions">
+                        <button class="copy-code-button" id="copy-code-button" type="button" hidden title="Copy code to clipboard">
+                          <span class="copy-icon">⎘</span> <span id="copy-label">Copy code</span>
+                        </button>
+                        <button class="code-reveal-button" id="code-reveal-button" type="button">Reveal code</button>
+                        <label class="sr-only" for="language-select">Choose solution language</label>
+                        <select id="language-select" aria-label="Solution language" hidden></select>
+                      </div>
+                    </div>
+                    <div class="code-container" id="code-container" hidden>
+                      <pre class="code-block"><code id="source-code" class="highlighted-code"></code></pre>
+                    </div>
+                    <p class="code-caption" id="code-caption">Try to write the solution before opening the reference.</p>
+                  </section>
+
+                  <div class="rate-section">
+                    <div>
+                      <p class="eyebrow">HOW DID THAT FEEL?</p>
+                      <p class="rate-hint">Spaced repetition schedules your next review based on your rating.</p>
+                    </div>
+                    <div class="rating-buttons" role="group" aria-label="Rate recall">
+                      <button class="rating-button rating-again" data-rating="again" type="button">
+                        <span class="rate-key">1</span> Again <span class="rate-time">10m</span>
+                      </button>
+                      <button class="rating-button rating-hard" data-rating="hard" type="button">
+                        <span class="rate-key">2</span> Hard <span class="rate-time">1d</span>
+                      </button>
+                      <button class="rating-button rating-good" data-rating="good" type="button">
+                        <span class="rate-key">3</span> Good <span class="rate-time">3d</span>
+                      </button>
+                      <button class="rating-button rating-easy" data-rating="easy" type="button">
+                        <span class="rate-key">4</span> Easy <span class="rate-time">4d</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <footer class="card-footer">
+                <span id="card-position">—</span>
+                <div class="step-controls">
+                  <button class="step-button" id="previous-button" type="button" aria-label="Previous card">←</button>
+                  <button class="step-button step-next" id="next-button" type="button" aria-label="Next card">→</button>
+                </div>
+              </footer>
+            </article>
+
+            <div class="keyboard-legend">
+              <span class="legend-item"><kbd>Space</kbd> Reveal answer / code</span>
+              <span class="legend-item"><kbd>H</kbd> Progressive hints</span>
+              <span class="legend-item"><kbd>1</kbd>–<kbd>4</kbd> Rate recall</span>
+              <span class="legend-item"><kbd>←</kbd> <kbd>→</kbd> Navigate</span>
+              <span class="legend-item"><kbd>/</kbd> Search</span>
+            </div>
+            <p class="app-message" id="app-message" role="status" aria-live="polite"></p>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Small reps. Strong recall. 102 curated algorithmic patterns.</span>
+        <span>Local-first · private · no dependencies</span>
+      </footer>
+    </div>
+
+    <!-- In-App Markdown Viewer Modal -->
+    <div class="modal-backdrop" id="markdown-modal" hidden>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-header">
+          <div class="modal-title-box">
+            <span class="eyebrow" id="modal-eyebrow">DOCUMENT PREVIEW</span>
+            <h3 id="modal-title">Problem Statement</h3>
+          </div>
+          <div class="modal-actions">
+            <a id="modal-raw-link" class="modal-action-btn" target="_blank" rel="noreferrer" title="Open raw file in new tab">View raw ↗</a>
+            <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close preview">✕</button>
+          </div>
+        </div>
+        <div class="modal-body doc-rendered" id="modal-body">
+          <p>Loading document...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

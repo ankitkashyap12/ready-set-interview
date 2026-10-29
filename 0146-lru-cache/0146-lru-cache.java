@@ -1,102 +1,82 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class LRUCache {
 
     int capacity;
 
-    static class DoubleLinkedList{
+    static class DoubleLinkedList {
         int key;
         int value;
         DoubleLinkedList next;
         DoubleLinkedList prev;
 
-        DoubleLinkedList(int key,int val){
-            this.key=key;
-            this.value=val;
-            this.next=null;
-            this.prev=null;
-
+        DoubleLinkedList(int key, int val) {
+            this.key = key;
+            this.value = val;
+            this.next = null;
+            this.prev = null;
         }
-
     }
 
-    private Map<Integer,DoubleLinkedList> cacheMap;
+    private Map<Integer, DoubleLinkedList> cacheMap;
     DoubleLinkedList head;
     DoubleLinkedList tail;
 
     public LRUCache(int capacity) {
-        this.capacity=capacity;
-        cacheMap= new HashMap<>();
-        head= new DoubleLinkedList(0,0);
-        tail = new DoubleLinkedList(0,0);
-        this.head.next=tail;
-        this.head.prev=tail;
+        this.capacity = capacity;
+        cacheMap = new HashMap<>();
+        head = new DoubleLinkedList(0, 0);
+        tail = new DoubleLinkedList(0, 0);
+        head.next = tail;
+        tail.prev = head;
     }
     
     public int get(int key) {
-         //System.out.println("get ("+key+")");
-        //check if exists
         DoubleLinkedList node = cacheMap.get(key);
-        if(node==null)
+        if (node == null)
             return -1;
-        //else attach it to head as it's most recently accessed
-        // detach from existing position
+        // Detach and move to front (most recently used)
         removeNode(node);
         moveToFront(node);
         return node.value;
-        
     }
     
     public void put(int key, int value) {
-
-        DoubleLinkedList node= cacheMap.get(key);
-        if(node==null){
-            DoubleLinkedList newNode= new DoubleLinkedList(key,value);
-            System.out.println("putiing new parir with key "+key+" val "+value);
-            cacheMap.put(key,newNode);
-            //moveToFront
+        DoubleLinkedList node = cacheMap.get(key);
+        if (node == null) {
+            DoubleLinkedList newNode = new DoubleLinkedList(key, value);
+            cacheMap.put(key, newNode);
             moveToFront(newNode);
-            if(cacheMap.size() > capacity){
-                //evict node attached to tail(Least recently used)
-                System.out.println("current capacity "+cacheMap.size() +" is greater then "+capacity);
-                DoubleLinkedList lruNode =popTail();
-                DoubleLinkedList removed =cacheMap.remove(lruNode.key);
-                 //System.out.println("removed "+removed.key +" from cachemap");
+            if (cacheMap.size() > capacity) {
+                // Evict node before dummy tail (least recently used)
+                DoubleLinkedList lruNode = popTail();
+                cacheMap.remove(lruNode.key);
             }
-        }
-        else{
-            //already exists
-            // remove
-            //update
-            //moveToFront
+        } else {
             removeNode(node);
-            node.value=value;
+            node.value = value;
             moveToFront(node);
-
-
         }
-        
     }
 
-    public void removeNode(DoubleLinkedList node){
-        DoubleLinkedList prevNode= node.prev;
+    public void removeNode(DoubleLinkedList node) {
+        DoubleLinkedList prevNode = node.prev;
         DoubleLinkedList nextNode = node.next;
-        prevNode.next= nextNode;
-        nextNode.prev=prevNode;
-        System.out.println("Removed node with key "+node.key+" and val "+node.value);
+        prevNode.next = nextNode;
+        nextNode.prev = prevNode;
     }
 
-    public void moveToFront(DoubleLinkedList node){
-        node.prev=head;
-        node.next=head.next;
-         head.next.prev=node;
-        head.next=node;
-       
-        //System.out.println("Attached node to head with key "+node.key+" and val "+node.value);
+    public void moveToFront(DoubleLinkedList node) {
+        node.prev = head;
+        node.next = head.next;
+        head.next.prev = node;
+        head.next = node;
     }
 
-    public DoubleLinkedList popTail(){
+    public DoubleLinkedList popTail() {
         DoubleLinkedList lruNode = tail.prev;
         removeNode(lruNode);
-        //System.out.println("detached node from  tail with key "+lruNode.key+" and val "+lruNode.value);
         return lruNode;
     }
 }
