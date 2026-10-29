@@ -585,7 +585,7 @@ function renderCard() {
   ].join("");
 
   // README links (Formatted Preview Modal + Raw Link)
-  const readmePath = card.readme || `${card.folder}/README.md`;
+  const readmePath = card.readme || `problems/${card.folder}/README.md`;
   elements.readmeRawLink.href = localFileUrl(readmePath);
 
   // Position
@@ -801,7 +801,7 @@ function bindEvents() {
   elements.readmeModalBtn.addEventListener("click", () => {
     const card = cards.find((item) => item.id === activeId);
     if (!card) return;
-    const path = card.readme || `${card.folder}/README.md`;
+    const path = card.readme || `problems/${card.folder}/README.md`;
     openMarkdownModal(localFileUrl(path), `${card.title} — Problem Statement`, localFileUrl(path));
   });
 

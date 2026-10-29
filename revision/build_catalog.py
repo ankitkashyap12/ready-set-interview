@@ -404,15 +404,18 @@ def fallback_group(problem_dir: Path, readme: str) -> str:
 
 
 def discover_cards(root: Path) -> list[dict[str, object]]:
-    readme = (root / "README.md").read_text(encoding="utf-8", errors="replace")
+    readme_file = root / "README.md"
+    readme = readme_file.read_text(encoding="utf-8", errors="replace") if readme_file.is_file() else ""
     groups_by_folder = linked_groups(readme)
     cards: list[dict[str, object]] = []
 
-    for problem_dir in sorted(root.iterdir(), key=lambda path: path.name.casefold()):
+    scan_dir = root / "problems" if (root / "problems").is_dir() else root
+    for problem_dir in sorted(scan_dir.iterdir(), key=lambda path: path.name.casefold()):
         if (
             not problem_dir.is_dir()
             or problem_dir.name.startswith(".")
             or problem_dir.name in IGNORED_DIRECTORIES
+            or problem_dir.name == "problems"
         ):
             continue
         sources = [

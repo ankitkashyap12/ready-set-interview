@@ -67,7 +67,7 @@ Use when: {prob['topic']} problems require efficient traversal or optimal sub-st
 def write_all_revisions(root: Path = Path('.')):
     written = 0
     for prob in ALL_PROBLEMS:
-        folder = root / prob["folder"]
+        folder = (root / "problems" / prob["folder"]) if (root / "problems").is_dir() else (root / prob["folder"])
         if folder.is_dir():
             md_path = folder / "REVISION.md"
             content = format_revision_markdown(prob)

@@ -186,12 +186,12 @@
       },
       "sources": [
         {
-          "path": "0001-two-sum/0001-two-sum.java",
+          "path": "problems/0001-two-sum/0001-two-sum.java",
           "language": "Java",
           "filename": "0001-two-sum.java"
         }
       ],
-      "readme": "0001-two-sum/README.md",
+      "readme": "problems/0001-two-sum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum/",
       "problemNumberFormatted": "#001"
@@ -228,12 +228,12 @@
       },
       "sources": [
         {
-          "path": "1-two-sum/1-two-sum.java",
+          "path": "problems/1-two-sum/1-two-sum.java",
           "language": "Java",
           "filename": "1-two-sum.java"
         }
       ],
-      "readme": "1-two-sum/README.md",
+      "readme": "problems/1-two-sum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum/",
       "problemNumberFormatted": "#002"
@@ -272,12 +272,12 @@
       },
       "sources": [
         {
-          "path": "0003-longest-substring-without-repeating-characters/0003-longest-substring-without-repeating-characters.java",
+          "path": "problems/0003-longest-substring-without-repeating-characters/0003-longest-substring-without-repeating-characters.java",
           "language": "Java",
           "filename": "0003-longest-substring-without-repeating-characters.java"
         }
       ],
-      "readme": "0003-longest-substring-without-repeating-characters/README.md",
+      "readme": "problems/0003-longest-substring-without-repeating-characters/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
       "problemNumberFormatted": "#003"
@@ -314,12 +314,12 @@
       },
       "sources": [
         {
-          "path": "0009-palindrome-number/0009-palindrome-number.java",
+          "path": "problems/0009-palindrome-number/0009-palindrome-number.java",
           "language": "Java",
           "filename": "0009-palindrome-number.java"
         }
       ],
-      "readme": "0009-palindrome-number/README.md",
+      "readme": "problems/0009-palindrome-number/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/palindrome-number/",
       "problemNumberFormatted": "#004"
@@ -356,12 +356,12 @@
       },
       "sources": [
         {
-          "path": "0011-container-with-most-water/0011-container-with-most-water.java",
+          "path": "problems/0011-container-with-most-water/0011-container-with-most-water.java",
           "language": "Java",
           "filename": "0011-container-with-most-water.java"
         }
       ],
-      "readme": "0011-container-with-most-water/README.md",
+      "readme": "problems/0011-container-with-most-water/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/container-with-most-water/",
       "problemNumberFormatted": "#005"
@@ -398,12 +398,12 @@
       },
       "sources": [
         {
-          "path": "0015-3sum/0015-3sum.java",
+          "path": "problems/0015-3sum/0015-3sum.java",
           "language": "Java",
           "filename": "0015-3sum.java"
         }
       ],
-      "readme": "0015-3sum/README.md",
+      "readme": "problems/0015-3sum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/3sum/",
       "problemNumberFormatted": "#006"
@@ -441,12 +441,12 @@
       },
       "sources": [
         {
-          "path": "0020-valid-parentheses/0020-valid-parentheses.java",
+          "path": "problems/0020-valid-parentheses/0020-valid-parentheses.java",
           "language": "Java",
           "filename": "0020-valid-parentheses.java"
         }
       ],
-      "readme": "0020-valid-parentheses/README.md",
+      "readme": "problems/0020-valid-parentheses/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/valid-parentheses/",
       "problemNumberFormatted": "#007"
@@ -484,12 +484,12 @@
       },
       "sources": [
         {
-          "path": "0056-merge-intervals/0056-merge-intervals.java",
+          "path": "problems/0056-merge-intervals/0056-merge-intervals.java",
           "language": "Java",
           "filename": "0056-merge-intervals.java"
         }
       ],
-      "readme": "0056-merge-intervals/README.md",
+      "readme": "problems/0056-merge-intervals/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/merge-intervals/",
       "problemNumberFormatted": "#008"
@@ -526,12 +526,12 @@
       },
       "sources": [
         {
-          "path": "0075-sort-colors/0075-sort-colors.java",
+          "path": "problems/0075-sort-colors/0075-sort-colors.java",
           "language": "Java",
           "filename": "0075-sort-colors.java"
         }
       ],
-      "readme": "0075-sort-colors/README.md",
+      "readme": "problems/0075-sort-colors/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-colors/",
       "problemNumberFormatted": "#009"
@@ -568,12 +568,12 @@
       },
       "sources": [
         {
-          "path": "0098-validate-binary-search-tree/0098-validate-binary-search-tree.java",
+          "path": "problems/0098-validate-binary-search-tree/0098-validate-binary-search-tree.java",
           "language": "Java",
           "filename": "0098-validate-binary-search-tree.java"
         }
       ],
-      "readme": "0098-validate-binary-search-tree/README.md",
+      "readme": "problems/0098-validate-binary-search-tree/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/validate-binary-search-tree/",
       "problemNumberFormatted": "#010"
@@ -610,12 +610,12 @@
       },
       "sources": [
         {
-          "path": "0104-maximum-depth-of-binary-tree/0104-maximum-depth-of-binary-tree.java",
+          "path": "problems/0104-maximum-depth-of-binary-tree/0104-maximum-depth-of-binary-tree.java",
           "language": "Java",
           "filename": "0104-maximum-depth-of-binary-tree.java"
         }
       ],
-      "readme": "0104-maximum-depth-of-binary-tree/README.md",
+      "readme": "problems/0104-maximum-depth-of-binary-tree/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
       "problemNumberFormatted": "#011"
@@ -652,12 +652,12 @@
       },
       "sources": [
         {
-          "path": "0112-path-sum/0112-path-sum.java",
+          "path": "problems/0112-path-sum/0112-path-sum.java",
           "language": "Java",
           "filename": "0112-path-sum.java"
         }
       ],
-      "readme": "0112-path-sum/README.md",
+      "readme": "problems/0112-path-sum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/path-sum/",
       "problemNumberFormatted": "#012"
@@ -695,12 +695,12 @@
       },
       "sources": [
         {
-          "path": "0121-best-time-to-buy-and-sell-stock/0121-best-time-to-buy-and-sell-stock.java",
+          "path": "problems/0121-best-time-to-buy-and-sell-stock/0121-best-time-to-buy-and-sell-stock.java",
           "language": "Java",
           "filename": "0121-best-time-to-buy-and-sell-stock.java"
         }
       ],
-      "readme": "0121-best-time-to-buy-and-sell-stock/README.md",
+      "readme": "problems/0121-best-time-to-buy-and-sell-stock/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
       "problemNumberFormatted": "#013"
@@ -738,12 +738,12 @@
       },
       "sources": [
         {
-          "path": "0125-valid-palindrome/0125-valid-palindrome.java",
+          "path": "problems/0125-valid-palindrome/0125-valid-palindrome.java",
           "language": "Java",
           "filename": "0125-valid-palindrome.java"
         }
       ],
-      "readme": "0125-valid-palindrome/README.md",
+      "readme": "problems/0125-valid-palindrome/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/valid-palindrome/",
       "problemNumberFormatted": "#014"
@@ -780,12 +780,12 @@
       },
       "sources": [
         {
-          "path": "0146-lru-cache/0146-lru-cache.java",
+          "path": "problems/0146-lru-cache/0146-lru-cache.java",
           "language": "Java",
           "filename": "0146-lru-cache.java"
         }
       ],
-      "readme": "0146-lru-cache/README.md",
+      "readme": "problems/0146-lru-cache/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/lru-cache/",
       "problemNumberFormatted": "#015"
@@ -822,12 +822,12 @@
       },
       "sources": [
         {
-          "path": "0167-two-sum-ii-input-array-is-sorted/0167-two-sum-ii-input-array-is-sorted.java",
+          "path": "problems/0167-two-sum-ii-input-array-is-sorted/0167-two-sum-ii-input-array-is-sorted.java",
           "language": "Java",
           "filename": "0167-two-sum-ii-input-array-is-sorted.java"
         }
       ],
-      "readme": "0167-two-sum-ii-input-array-is-sorted/README.md",
+      "readme": "problems/0167-two-sum-ii-input-array-is-sorted/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
       "problemNumberFormatted": "#016"
@@ -864,12 +864,12 @@
       },
       "sources": [
         {
-          "path": "0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java",
+          "path": "problems/0215-kth-largest-element-in-an-array/0215-kth-largest-element-in-an-array.java",
           "language": "Java",
           "filename": "0215-kth-largest-element-in-an-array.java"
         }
       ],
-      "readme": "0215-kth-largest-element-in-an-array/README.md",
+      "readme": "problems/0215-kth-largest-element-in-an-array/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
       "problemNumberFormatted": "#017"
@@ -908,12 +908,12 @@
       },
       "sources": [
         {
-          "path": "0217-contains-duplicate/0217-contains-duplicate.java",
+          "path": "problems/0217-contains-duplicate/0217-contains-duplicate.java",
           "language": "Java",
           "filename": "0217-contains-duplicate.java"
         }
       ],
-      "readme": "0217-contains-duplicate/README.md",
+      "readme": "problems/0217-contains-duplicate/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/contains-duplicate/",
       "problemNumberFormatted": "#018"
@@ -950,17 +950,17 @@
       },
       "sources": [
         {
-          "path": "217-contains-duplicate/217-contains-duplicate.java",
+          "path": "problems/217-contains-duplicate/217-contains-duplicate.java",
           "language": "Java",
           "filename": "217-contains-duplicate.java"
         },
         {
-          "path": "217-contains-duplicate/217-contains-duplicate.py",
+          "path": "problems/217-contains-duplicate/217-contains-duplicate.py",
           "language": "Python",
           "filename": "217-contains-duplicate.py"
         }
       ],
-      "readme": "217-contains-duplicate/README.md",
+      "readme": "problems/217-contains-duplicate/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/contains-duplicate/",
       "problemNumberFormatted": "#019"
@@ -998,12 +998,12 @@
       },
       "sources": [
         {
-          "path": "0238-product-of-array-except-self/0238-product-of-array-except-self.java",
+          "path": "problems/0238-product-of-array-except-self/0238-product-of-array-except-self.java",
           "language": "Java",
           "filename": "0238-product-of-array-except-self.java"
         }
       ],
-      "readme": "0238-product-of-array-except-self/README.md",
+      "readme": "problems/0238-product-of-array-except-self/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/product-of-array-except-self/",
       "problemNumberFormatted": "#020"
@@ -1040,12 +1040,12 @@
       },
       "sources": [
         {
-          "path": "0283-move-zeroes/0283-move-zeroes.java",
+          "path": "problems/0283-move-zeroes/0283-move-zeroes.java",
           "language": "Java",
           "filename": "0283-move-zeroes.java"
         }
       ],
-      "readme": "0283-move-zeroes/README.md",
+      "readme": "problems/0283-move-zeroes/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/move-zeroes/",
       "problemNumberFormatted": "#021"
@@ -1082,12 +1082,12 @@
       },
       "sources": [
         {
-          "path": "0347-top-k-frequent-elements/0347-top-k-frequent-elements.java",
+          "path": "problems/0347-top-k-frequent-elements/0347-top-k-frequent-elements.java",
           "language": "Java",
           "filename": "0347-top-k-frequent-elements.java"
         }
       ],
-      "readme": "0347-top-k-frequent-elements/README.md",
+      "readme": "problems/0347-top-k-frequent-elements/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
       "problemNumberFormatted": "#022"
@@ -1124,12 +1124,12 @@
       },
       "sources": [
         {
-          "path": "0611-valid-triangle-number/0611-valid-triangle-number.java",
+          "path": "problems/0611-valid-triangle-number/0611-valid-triangle-number.java",
           "language": "Java",
           "filename": "0611-valid-triangle-number.java"
         }
       ],
-      "readme": "0611-valid-triangle-number/README.md",
+      "readme": "problems/0611-valid-triangle-number/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/valid-triangle-number/",
       "problemNumberFormatted": "#023"
@@ -1166,12 +1166,12 @@
       },
       "sources": [
         {
-          "path": "0875-koko-eating-bananas/0875-koko-eating-bananas.java",
+          "path": "problems/0875-koko-eating-bananas/0875-koko-eating-bananas.java",
           "language": "Java",
           "filename": "0875-koko-eating-bananas.java"
         }
       ],
-      "readme": "0875-koko-eating-bananas/README.md",
+      "readme": "problems/0875-koko-eating-bananas/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/koko-eating-bananas/",
       "problemNumberFormatted": "#024"
@@ -1208,12 +1208,12 @@
       },
       "sources": [
         {
-          "path": "1448-count-good-nodes-in-binary-tree/1448-count-good-nodes-in-binary-tree.java",
+          "path": "problems/1448-count-good-nodes-in-binary-tree/1448-count-good-nodes-in-binary-tree.java",
           "language": "Java",
           "filename": "1448-count-good-nodes-in-binary-tree.java"
         }
       ],
-      "readme": "1448-count-good-nodes-in-binary-tree/README.md",
+      "readme": "problems/1448-count-good-nodes-in-binary-tree/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
       "problemNumberFormatted": "#025"
@@ -1250,12 +1250,12 @@
       },
       "sources": [
         {
-          "path": "268-missing-number/268-missing-number.java",
+          "path": "problems/268-missing-number/268-missing-number.java",
           "language": "Java",
           "filename": "268-missing-number.java"
         }
       ],
-      "readme": "268-missing-number/README.md",
+      "readme": "problems/268-missing-number/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/missing-number/",
       "problemNumberFormatted": "#026"
@@ -1292,12 +1292,12 @@
       },
       "sources": [
         {
-          "path": "53-maximum-subarray/53-maximum-subarray.java",
+          "path": "problems/53-maximum-subarray/53-maximum-subarray.java",
           "language": "Java",
           "filename": "53-maximum-subarray.java"
         }
       ],
-      "readme": "53-maximum-subarray/README.md",
+      "readme": "problems/53-maximum-subarray/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-subarray/",
       "problemNumberFormatted": "#027"
@@ -1334,12 +1334,12 @@
       },
       "sources": [
         {
-          "path": "ArrayOfProducts/ArrayOfProducts.java",
+          "path": "problems/ArrayOfProducts/ArrayOfProducts.java",
           "language": "Java",
           "filename": "ArrayOfProducts.java"
         }
       ],
-      "readme": "ArrayOfProducts/README.md",
+      "readme": "problems/ArrayOfProducts/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/product-of-array-except-self/",
       "problemNumberFormatted": "#028"
@@ -1376,12 +1376,12 @@
       },
       "sources": [
         {
-          "path": "BestSeat/BestSeat.java",
+          "path": "problems/BestSeat/BestSeat.java",
           "language": "Java",
           "filename": "BestSeat.java"
         }
       ],
-      "readme": "BestSeat/README.md",
+      "readme": "problems/BestSeat/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximize-distance-to-closest-person/",
       "problemNumberFormatted": "#029"
@@ -1418,12 +1418,12 @@
       },
       "sources": [
         {
-          "path": "BubbleSort/BubbleSort.java",
+          "path": "problems/BubbleSort/BubbleSort.java",
           "language": "Java",
           "filename": "BubbleSort.java"
         }
       ],
-      "readme": "BubbleSort/README.md",
+      "readme": "problems/BubbleSort/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-an-array/",
       "problemNumberFormatted": "#030"
@@ -1460,12 +1460,12 @@
       },
       "sources": [
         {
-          "path": "CombinationSum/CombinationSum.java",
+          "path": "problems/CombinationSum/CombinationSum.java",
           "language": "Java",
           "filename": "CombinationSum.java"
         }
       ],
-      "readme": "CombinationSum/README.md",
+      "readme": "problems/CombinationSum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/combination-sum/",
       "problemNumberFormatted": "#031"
@@ -1502,12 +1502,12 @@
       },
       "sources": [
         {
-          "path": "FirstDuplicateValue/FirstDuplicateValue.java",
+          "path": "problems/FirstDuplicateValue/FirstDuplicateValue.java",
           "language": "Java",
           "filename": "FirstDuplicateValue.java"
         }
       ],
-      "readme": "FirstDuplicateValue/README.md",
+      "readme": "problems/FirstDuplicateValue/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
       "problemNumberFormatted": "#032"
@@ -1544,12 +1544,12 @@
       },
       "sources": [
         {
-          "path": "LongestPeak/LongestPeak.java",
+          "path": "problems/LongestPeak/LongestPeak.java",
           "language": "Java",
           "filename": "LongestPeak.java"
         }
       ],
-      "readme": "LongestPeak/README.md",
+      "readme": "problems/LongestPeak/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/longest-mountain-in-array/",
       "problemNumberFormatted": "#033"
@@ -1586,12 +1586,12 @@
       },
       "sources": [
         {
-          "path": "MajorityElement/MajorityElement.java",
+          "path": "problems/MajorityElement/MajorityElement.java",
           "language": "Java",
           "filename": "MajorityElement.java"
         }
       ],
-      "readme": "MajorityElement/README.md",
+      "readme": "problems/MajorityElement/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/majority-element/",
       "problemNumberFormatted": "#034"
@@ -1628,12 +1628,12 @@
       },
       "sources": [
         {
-          "path": "MergeOverlappinIntervals/MergeOverlappinIntervals.java",
+          "path": "problems/MergeOverlappinIntervals/MergeOverlappinIntervals.java",
           "language": "Java",
           "filename": "MergeOverlappinIntervals.java"
         }
       ],
-      "readme": "MergeOverlappinIntervals/README.md",
+      "readme": "problems/MergeOverlappinIntervals/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/merge-intervals/",
       "problemNumberFormatted": "#035"
@@ -1670,12 +1670,12 @@
       },
       "sources": [
         {
-          "path": "MergeSort/MergeSort.java",
+          "path": "problems/MergeSort/MergeSort.java",
           "language": "Java",
           "filename": "MergeSort.java"
         }
       ],
-      "readme": "MergeSort/README.md",
+      "readme": "problems/MergeSort/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-an-array/",
       "problemNumberFormatted": "#036"
@@ -1712,12 +1712,12 @@
       },
       "sources": [
         {
-          "path": "MergeSort2/MergeSort2.java",
+          "path": "problems/MergeSort2/MergeSort2.java",
           "language": "Java",
           "filename": "MergeSort2.java"
         }
       ],
-      "readme": "MergeSort2/README.md",
+      "readme": "problems/MergeSort2/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-an-array/",
       "problemNumberFormatted": "#037"
@@ -1754,12 +1754,12 @@
       },
       "sources": [
         {
-          "path": "MonotonicArray/MonotonicArray.java",
+          "path": "problems/MonotonicArray/MonotonicArray.java",
           "language": "Java",
           "filename": "MonotonicArray.java"
         }
       ],
-      "readme": "MonotonicArray/README.md",
+      "readme": "problems/MonotonicArray/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/monotonic-array/",
       "problemNumberFormatted": "#038"
@@ -1796,12 +1796,12 @@
       },
       "sources": [
         {
-          "path": "MoveToEnd/MoveToEnd.java",
+          "path": "problems/MoveToEnd/MoveToEnd.java",
           "language": "Java",
           "filename": "MoveToEnd.java"
         }
       ],
-      "readme": "MoveToEnd/README.md",
+      "readme": "problems/MoveToEnd/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/remove-element/",
       "problemNumberFormatted": "#039"
@@ -1838,12 +1838,12 @@
       },
       "sources": [
         {
-          "path": "NonConstructibleChange/NonConstructibleChange.java",
+          "path": "problems/NonConstructibleChange/NonConstructibleChange.java",
           "language": "Java",
           "filename": "NonConstructibleChange.java"
         }
       ],
-      "readme": "NonConstructibleChange/README.md",
+      "readme": "problems/NonConstructibleChange/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/patching-array/",
       "problemNumberFormatted": "#040"
@@ -1880,12 +1880,12 @@
       },
       "sources": [
         {
-          "path": "QuickSort/QuickSort.java",
+          "path": "problems/QuickSort/QuickSort.java",
           "language": "Java",
           "filename": "QuickSort.java"
         }
       ],
-      "readme": "QuickSort/README.md",
+      "readme": "problems/QuickSort/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-an-array/",
       "problemNumberFormatted": "#041"
@@ -1922,12 +1922,12 @@
       },
       "sources": [
         {
-          "path": "SmallestDifference/SmallestDifference.java",
+          "path": "problems/SmallestDifference/SmallestDifference.java",
           "language": "Java",
           "filename": "SmallestDifference.java"
         }
       ],
-      "readme": "SmallestDifference/README.md",
+      "readme": "problems/SmallestDifference/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/minimum-absolute-difference/",
       "problemNumberFormatted": "#042"
@@ -1964,12 +1964,12 @@
       },
       "sources": [
         {
-          "path": "SortedSquaredArray/SortedSquaredArray.java",
+          "path": "problems/SortedSquaredArray/SortedSquaredArray.java",
           "language": "Java",
           "filename": "SortedSquaredArray.java"
         }
       ],
-      "readme": "SortedSquaredArray/README.md",
+      "readme": "problems/SortedSquaredArray/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/squares-of-a-sorted-array/",
       "problemNumberFormatted": "#043"
@@ -2006,12 +2006,12 @@
       },
       "sources": [
         {
-          "path": "SpiralMatrixTraversal/SpiralMatrixTraversal.java",
+          "path": "problems/SpiralMatrixTraversal/SpiralMatrixTraversal.java",
           "language": "Java",
           "filename": "SpiralMatrixTraversal.java"
         }
       ],
-      "readme": "SpiralMatrixTraversal/README.md",
+      "readme": "problems/SpiralMatrixTraversal/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/spiral-matrix/",
       "problemNumberFormatted": "#044"
@@ -2048,12 +2048,12 @@
       },
       "sources": [
         {
-          "path": "SweetAndSavoury/SweetAndSavoury.java",
+          "path": "problems/SweetAndSavoury/SweetAndSavoury.java",
           "language": "Java",
           "filename": "SweetAndSavoury.java"
         }
       ],
-      "readme": "SweetAndSavoury/README.md",
+      "readme": "problems/SweetAndSavoury/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum-less-than-k/",
       "problemNumberFormatted": "#045"
@@ -2090,12 +2090,12 @@
       },
       "sources": [
         {
-          "path": "TournamentWinner/TournamentWinner.java",
+          "path": "problems/TournamentWinner/TournamentWinner.java",
           "language": "Java",
           "filename": "TournamentWinner.java"
         }
       ],
-      "readme": "TournamentWinner/README.md",
+      "readme": "problems/TournamentWinner/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sender-with-largest-word-count/",
       "problemNumberFormatted": "#046"
@@ -2132,12 +2132,12 @@
       },
       "sources": [
         {
-          "path": "TransposeMatrix/TransposeMatrix.java",
+          "path": "problems/TransposeMatrix/TransposeMatrix.java",
           "language": "Java",
           "filename": "TransposeMatrix.java"
         }
       ],
-      "readme": "TransposeMatrix/README.md",
+      "readme": "problems/TransposeMatrix/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/transpose-matrix/",
       "problemNumberFormatted": "#047"
@@ -2174,12 +2174,12 @@
       },
       "sources": [
         {
-          "path": "TripleSum/TripleSum.java",
+          "path": "problems/TripleSum/TripleSum.java",
           "language": "Java",
           "filename": "TripleSum.java"
         }
       ],
-      "readme": "TripleSum/README.md",
+      "readme": "problems/TripleSum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/3sum/",
       "problemNumberFormatted": "#048"
@@ -2216,12 +2216,12 @@
       },
       "sources": [
         {
-          "path": "TwoSum/TwoSum.java",
+          "path": "problems/TwoSum/TwoSum.java",
           "language": "Java",
           "filename": "TwoSum.java"
         }
       ],
-      "readme": "TwoSum/README.md",
+      "readme": "problems/TwoSum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum/",
       "problemNumberFormatted": "#049"
@@ -2258,12 +2258,12 @@
       },
       "sources": [
         {
-          "path": "ValidateSubsequence/ValidateSubsequence.java",
+          "path": "problems/ValidateSubsequence/ValidateSubsequence.java",
           "language": "Java",
           "filename": "ValidateSubsequence.java"
         }
       ],
-      "readme": "ValidateSubsequence/README.md",
+      "readme": "problems/ValidateSubsequence/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/is-subsequence/",
       "problemNumberFormatted": "#050"
@@ -2300,12 +2300,12 @@
       },
       "sources": [
         {
-          "path": "ZeroSumSubArray/ZeroSumSubArray.java",
+          "path": "problems/ZeroSumSubArray/ZeroSumSubArray.java",
           "language": "Java",
           "filename": "ZeroSumSubArray.java"
         }
       ],
-      "readme": "ZeroSumSubArray/README.md",
+      "readme": "problems/ZeroSumSubArray/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/subarray-sum-equals-k/",
       "problemNumberFormatted": "#051"
@@ -2342,12 +2342,12 @@
       },
       "sources": [
         {
-          "path": "1. Absolute Value - GFG/1.-absolute-value.java",
+          "path": "problems/1. Absolute Value - GFG/1.-absolute-value.java",
           "language": "Java",
           "filename": "1.-absolute-value.java"
         }
       ],
-      "readme": "1. Absolute Value - GFG/README.md",
+      "readme": "problems/1. Absolute Value - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
       "problemNumberFormatted": "#052"
@@ -2384,12 +2384,12 @@
       },
       "sources": [
         {
-          "path": "1. Array insert at end - GFG/1.-array-insert-at-end.java",
+          "path": "problems/1. Array insert at end - GFG/1.-array-insert-at-end.java",
           "language": "Java",
           "filename": "1.-array-insert-at-end.java"
         }
       ],
-      "readme": "1. Array insert at end - GFG/README.md",
+      "readme": "problems/1. Array insert at end - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/remove-element/",
       "problemNumberFormatted": "#053"
@@ -2426,12 +2426,12 @@
       },
       "sources": [
         {
-          "path": "1. Find first set bit - GFG/1.-find-first-set-bit.cpp",
+          "path": "problems/1. Find first set bit - GFG/1.-find-first-set-bit.cpp",
           "language": "C++",
           "filename": "1.-find-first-set-bit.cpp"
         }
       ],
-      "readme": "1. Find first set bit - GFG/README.md",
+      "readme": "problems/1. Find first set bit - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/number-of-1-bits/",
       "problemNumberFormatted": "#054"
@@ -2468,12 +2468,12 @@
       },
       "sources": [
         {
-          "path": "2. Array insert at index - GFG/GFG_2.java",
+          "path": "problems/2. Array insert at index - GFG/GFG_2.java",
           "language": "Java",
           "filename": "GFG_2.java"
         }
       ],
-      "readme": "2. Array insert at index - GFG/README.md",
+      "readme": "problems/2. Array insert at index - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/remove-element/",
       "problemNumberFormatted": "#055"
@@ -2510,12 +2510,12 @@
       },
       "sources": [
         {
-          "path": "2. Rightmost different bit - GFG/2.-rightmost-different-bit.cpp",
+          "path": "problems/2. Rightmost different bit - GFG/2.-rightmost-different-bit.cpp",
           "language": "C++",
           "filename": "2.-rightmost-different-bit.cpp"
         }
       ],
-      "readme": "2. Rightmost different bit - GFG/README.md",
+      "readme": "problems/2. Rightmost different bit - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/hamming-distance/",
       "problemNumberFormatted": "#056"
@@ -2552,12 +2552,12 @@
       },
       "sources": [
         {
-          "path": "3. Check whether K-th bit is set or not - GFG/3.-check-whether-kth-bit-is-set-or-not.cpp",
+          "path": "problems/3. Check whether K-th bit is set or not - GFG/3.-check-whether-kth-bit-is-set-or-not.cpp",
           "language": "C++",
           "filename": "3.-check-whether-kth-bit-is-set-or-not.cpp"
         }
       ],
-      "readme": "3. Check whether K-th bit is set or not - GFG/README.md",
+      "readme": "problems/3. Check whether K-th bit is set or not - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/number-of-1-bits/",
       "problemNumberFormatted": "#057"
@@ -2594,12 +2594,12 @@
       },
       "sources": [
         {
-          "path": "3. Mean And Median of Array - GFG/3.-mean-and-median-of-array.java",
+          "path": "problems/3. Mean And Median of Array - GFG/3.-mean-and-median-of-array.java",
           "language": "Java",
           "filename": "3.-mean-and-median-of-array.java"
         }
       ],
-      "readme": "3. Mean And Median of Array - GFG/README.md",
+      "readme": "problems/3. Mean And Median of Array - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
       "problemNumberFormatted": "#058"
@@ -2636,12 +2636,12 @@
       },
       "sources": [
         {
-          "path": "4. Count total set bits - GFG/4.-count-total-set-bits.cpp",
+          "path": "problems/4. Count total set bits - GFG/4.-count-total-set-bits.cpp",
           "language": "C++",
           "filename": "4.-count-total-set-bits.cpp"
         }
       ],
-      "readme": "4. Count total set bits - GFG/README.md",
+      "readme": "problems/4. Count total set bits - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/counting-bits/",
       "problemNumberFormatted": "#059"
@@ -2678,12 +2678,12 @@
       },
       "sources": [
         {
-          "path": "4. Factorial Of Number - GFG/4.-factorial-of-number.java",
+          "path": "problems/4. Factorial Of Number - GFG/4.-factorial-of-number.java",
           "language": "Java",
           "filename": "4.-factorial-of-number.java"
         }
       ],
-      "readme": "4. Factorial Of Number - GFG/README.md",
+      "readme": "problems/4. Factorial Of Number - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/factorial-trailing-zeroes/",
       "problemNumberFormatted": "#060"
@@ -2720,12 +2720,12 @@
       },
       "sources": [
         {
-          "path": "5. Bit Difference - GFG/5.-bit-difference.cpp",
+          "path": "problems/5. Bit Difference - GFG/5.-bit-difference.cpp",
           "language": "C++",
           "filename": "5.-bit-difference.cpp"
         }
       ],
-      "readme": "5. Bit Difference - GFG/README.md",
+      "readme": "problems/5. Bit Difference - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/hamming-distance/",
       "problemNumberFormatted": "#061"
@@ -2762,12 +2762,12 @@
       },
       "sources": [
         {
-          "path": "5. Digits In Factorial - GFG/5.-digits-in-factorial.java",
+          "path": "problems/5. Digits In Factorial - GFG/5.-digits-in-factorial.java",
           "language": "Java",
           "filename": "5.-digits-in-factorial.java"
         }
       ],
-      "readme": "5. Digits In Factorial - GFG/README.md",
+      "readme": "problems/5. Digits In Factorial - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
       "problemNumberFormatted": "#062"
@@ -2804,12 +2804,12 @@
       },
       "sources": [
         {
-          "path": "5. Max and Second Max - GFG/5.-max-and-second-max.java",
+          "path": "problems/5. Max and Second Max - GFG/5.-max-and-second-max.java",
           "language": "Java",
           "filename": "5.-max-and-second-max.java"
         }
       ],
-      "readme": "5. Max and Second Max - GFG/README.md",
+      "readme": "problems/5. Max and Second Max - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/third-maximum-number/",
       "problemNumberFormatted": "#063"
@@ -2846,12 +2846,12 @@
       },
       "sources": [
         {
-          "path": "6. GP Term - GFG/6.-gp-term.cpp",
+          "path": "problems/6. GP Term - GFG/6.-gp-term.cpp",
           "language": "C++",
           "filename": "6.-gp-term.cpp"
         }
       ],
-      "readme": "6. GP Term - GFG/README.md",
+      "readme": "problems/6. GP Term - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/powx-n/",
       "problemNumberFormatted": "#064"
@@ -2888,12 +2888,12 @@
       },
       "sources": [
         {
-          "path": "6. Number is sparse or not - GFG/6.-number-is-sparse-or-not.cpp",
+          "path": "problems/6. Number is sparse or not - GFG/6.-number-is-sparse-or-not.cpp",
           "language": "C++",
           "filename": "6.-number-is-sparse-or-not.cpp"
         }
       ],
-      "readme": "6. Number is sparse or not - GFG/README.md",
+      "readme": "problems/6. Number is sparse or not - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/number-of-1-bits/",
       "problemNumberFormatted": "#065"
@@ -2930,12 +2930,12 @@
       },
       "sources": [
         {
-          "path": "6. Strongest Neighbour - GFG/6.-strongest-neighbour.java",
+          "path": "problems/6. Strongest Neighbour - GFG/6.-strongest-neighbour.java",
           "language": "Java",
           "filename": "6.-strongest-neighbour.java"
         }
       ],
-      "readme": "6. Strongest Neighbour - GFG/README.md",
+      "readme": "problems/6. Strongest Neighbour - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sliding-window-maximum/",
       "problemNumberFormatted": "#066"
@@ -2972,12 +2972,12 @@
       },
       "sources": [
         {
-          "path": "7. Primality Test - GFG/7.-primality-test.cpp",
+          "path": "problems/7. Primality Test - GFG/7.-primality-test.cpp",
           "language": "C++",
           "filename": "7.-primality-test.cpp"
         }
       ],
-      "readme": "7. Primality Test - GFG/README.md",
+      "readme": "problems/7. Primality Test - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/count-primes/",
       "problemNumberFormatted": "#067"
@@ -3014,12 +3014,12 @@
       },
       "sources": [
         {
-          "path": "7. Reverse array in groups - GFG/7.-reverse-array-in-groups.java",
+          "path": "problems/7. Reverse array in groups - GFG/7.-reverse-array-in-groups.java",
           "language": "Java",
           "filename": "7.-reverse-array-in-groups.java"
         }
       ],
-      "readme": "7. Reverse array in groups - GFG/README.md",
+      "readme": "problems/7. Reverse array in groups - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/rotate-array/",
       "problemNumberFormatted": "#068"
@@ -3056,12 +3056,12 @@
       },
       "sources": [
         {
-          "path": "8. Exactly 3 Divisors - GFG/8.-exactly-3-divisors.cpp",
+          "path": "problems/8. Exactly 3 Divisors - GFG/8.-exactly-3-divisors.cpp",
           "language": "C++",
           "filename": "8.-exactly-3-divisors.cpp"
         }
       ],
-      "readme": "8. Exactly 3 Divisors - GFG/README.md",
+      "readme": "problems/8. Exactly 3 Divisors - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/three-divisors/",
       "problemNumberFormatted": "#069"
@@ -3098,12 +3098,12 @@
       },
       "sources": [
         {
-          "path": "9. Addition Under Modulo - GFG/9.-addition-under-modulo.cpp",
+          "path": "problems/9. Addition Under Modulo - GFG/9.-addition-under-modulo.cpp",
           "language": "C++",
           "filename": "9.-addition-under-modulo.cpp"
         }
       ],
-      "readme": "9. Addition Under Modulo - GFG/README.md",
+      "readme": "problems/9. Addition Under Modulo - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/super-pow/",
       "problemNumberFormatted": "#070"
@@ -3140,12 +3140,12 @@
       },
       "sources": [
         {
-          "path": "10. Multiplication Under Modulo - GFG/10.-multiplication-under-modulo.cpp",
+          "path": "problems/10. Multiplication Under Modulo - GFG/10.-multiplication-under-modulo.cpp",
           "language": "C++",
           "filename": "10.-multiplication-under-modulo.cpp"
         }
       ],
-      "readme": "10. Multiplication Under Modulo - GFG/README.md",
+      "readme": "problems/10. Multiplication Under Modulo - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/powx-n/",
       "problemNumberFormatted": "#071"
@@ -3182,12 +3182,12 @@
       },
       "sources": [
         {
-          "path": "11. Modular Multiplicative Inverse - GFG/11.-modular-multiplicative-inverse.cpp",
+          "path": "problems/11. Modular Multiplicative Inverse - GFG/11.-modular-multiplicative-inverse.cpp",
           "language": "C++",
           "filename": "11.-modular-multiplicative-inverse.cpp"
         }
       ],
-      "readme": "11. Modular Multiplicative Inverse - GFG/README.md",
+      "readme": "problems/11. Modular Multiplicative Inverse - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/super-pow/",
       "problemNumberFormatted": "#072"
@@ -3224,37 +3224,37 @@
       },
       "sources": [
         {
-          "path": "1_binary_search/binary_search.cpp",
+          "path": "problems/1_binary_search/binary_search.cpp",
           "language": "C++",
           "filename": "binary_search.cpp"
         },
         {
-          "path": "1_binary_search/BinarySearch.java",
+          "path": "problems/1_binary_search/BinarySearch.java",
           "language": "Java",
           "filename": "BinarySearch.java"
         },
         {
-          "path": "1_binary_search/binary_search.js",
+          "path": "problems/1_binary_search/binary_search.js",
           "language": "JavaScript",
           "filename": "binary_search.js"
         },
         {
-          "path": "1_binary_search/BinarySearch.kt",
+          "path": "problems/1_binary_search/BinarySearch.kt",
           "language": "Kotlin",
           "filename": "BinarySearch.kt"
         },
         {
-          "path": "1_binary_search/binary_search.py",
+          "path": "problems/1_binary_search/binary_search.py",
           "language": "Python",
           "filename": "binary_search.py"
         },
         {
-          "path": "1_binary_search/binary_search.rb",
+          "path": "problems/1_binary_search/binary_search.rb",
           "language": "Ruby",
           "filename": "binary_search.rb"
         }
       ],
-      "readme": "1_binary_search/README.md",
+      "readme": "problems/1_binary_search/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/binary-search/",
       "problemNumberFormatted": "#073"
@@ -3291,12 +3291,12 @@
       },
       "sources": [
         {
-          "path": "1_fibonacci_number/fibonacci.py",
+          "path": "problems/1_fibonacci_number/fibonacci.py",
           "language": "Python",
           "filename": "fibonacci.py"
         }
       ],
-      "readme": "1_fibonacci_number/README.md",
+      "readme": "problems/1_fibonacci_number/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#074"
@@ -3333,32 +3333,32 @@
       },
       "sources": [
         {
-          "path": "1_maximum_amount_of_gold/knapsack.cpp",
+          "path": "problems/1_maximum_amount_of_gold/knapsack.cpp",
           "language": "C++",
           "filename": "knapsack.cpp"
         },
         {
-          "path": "1_maximum_amount_of_gold/Knapsack.java",
+          "path": "problems/1_maximum_amount_of_gold/Knapsack.java",
           "language": "Java",
           "filename": "Knapsack.java"
         },
         {
-          "path": "1_maximum_amount_of_gold/Knapsack.kt",
+          "path": "problems/1_maximum_amount_of_gold/Knapsack.kt",
           "language": "Kotlin",
           "filename": "Knapsack.kt"
         },
         {
-          "path": "1_maximum_amount_of_gold/knapsack.py",
+          "path": "problems/1_maximum_amount_of_gold/knapsack.py",
           "language": "Python",
           "filename": "knapsack.py"
         },
         {
-          "path": "1_maximum_amount_of_gold/knapsack.rb",
+          "path": "problems/1_maximum_amount_of_gold/knapsack.rb",
           "language": "Ruby",
           "filename": "knapsack.rb"
         }
       ],
-      "readme": "1_maximum_amount_of_gold/README.md",
+      "readme": "problems/1_maximum_amount_of_gold/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/partition-equal-subset-sum/",
       "problemNumberFormatted": "#075"
@@ -3395,37 +3395,37 @@
       },
       "sources": [
         {
-          "path": "1_money_change/change.cpp",
+          "path": "problems/1_money_change/change.cpp",
           "language": "C++",
           "filename": "change.cpp"
         },
         {
-          "path": "1_money_change/change.hs",
+          "path": "problems/1_money_change/change.hs",
           "language": "Haskell",
           "filename": "change.hs"
         },
         {
-          "path": "1_money_change/Change.java",
+          "path": "problems/1_money_change/Change.java",
           "language": "Java",
           "filename": "Change.java"
         },
         {
-          "path": "1_money_change/Change.kt",
+          "path": "problems/1_money_change/Change.kt",
           "language": "Kotlin",
           "filename": "Change.kt"
         },
         {
-          "path": "1_money_change/change.py",
+          "path": "problems/1_money_change/change.py",
           "language": "Python",
           "filename": "change.py"
         },
         {
-          "path": "1_money_change/change.rb",
+          "path": "problems/1_money_change/change.rb",
           "language": "Ruby",
           "filename": "change.rb"
         }
       ],
-      "readme": "1_money_change/README.md",
+      "readme": "problems/1_money_change/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/lemonade-change/",
       "problemNumberFormatted": "#076"
@@ -3462,27 +3462,27 @@
       },
       "sources": [
         {
-          "path": "1_money_change_again/change_dp.cpp",
+          "path": "problems/1_money_change_again/change_dp.cpp",
           "language": "C++",
           "filename": "change_dp.cpp"
         },
         {
-          "path": "1_money_change_again/ChangeDP.java",
+          "path": "problems/1_money_change_again/ChangeDP.java",
           "language": "Java",
           "filename": "ChangeDP.java"
         },
         {
-          "path": "1_money_change_again/ChangeDP.kt",
+          "path": "problems/1_money_change_again/ChangeDP.kt",
           "language": "Kotlin",
           "filename": "ChangeDP.kt"
         },
         {
-          "path": "1_money_change_again/change_dp.py",
+          "path": "problems/1_money_change_again/change_dp.py",
           "language": "Python",
           "filename": "change_dp.py"
         }
       ],
-      "readme": "1_money_change_again/README.md",
+      "readme": "problems/1_money_change_again/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/coin-change/",
       "problemNumberFormatted": "#077"
@@ -3519,12 +3519,12 @@
       },
       "sources": [
         {
-          "path": "2_last_digit_of_fibonacci_number/fibonacci_last_digit.py",
+          "path": "problems/2_last_digit_of_fibonacci_number/fibonacci_last_digit.py",
           "language": "Python",
           "filename": "fibonacci_last_digit.py"
         }
       ],
-      "readme": "2_last_digit_of_fibonacci_number/README.md",
+      "readme": "problems/2_last_digit_of_fibonacci_number/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#078"
@@ -3561,32 +3561,32 @@
       },
       "sources": [
         {
-          "path": "2_majority_element/majority_element.cpp",
+          "path": "problems/2_majority_element/majority_element.cpp",
           "language": "C++",
           "filename": "majority_element.cpp"
         },
         {
-          "path": "2_majority_element/MajorityElement.java",
+          "path": "problems/2_majority_element/MajorityElement.java",
           "language": "Java",
           "filename": "MajorityElement.java"
         },
         {
-          "path": "2_majority_element/MajorityElement.kt",
+          "path": "problems/2_majority_element/MajorityElement.kt",
           "language": "Kotlin",
           "filename": "MajorityElement.kt"
         },
         {
-          "path": "2_majority_element/majority_element.py",
+          "path": "problems/2_majority_element/majority_element.py",
           "language": "Python",
           "filename": "majority_element.py"
         },
         {
-          "path": "2_majority_element/majority_element.rb",
+          "path": "problems/2_majority_element/majority_element.rb",
           "language": "Ruby",
           "filename": "majority_element.rb"
         }
       ],
-      "readme": "2_majority_element/README.md",
+      "readme": "problems/2_majority_element/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/majority-element/",
       "problemNumberFormatted": "#079"
@@ -3623,12 +3623,12 @@
       },
       "sources": [
         {
-          "path": "2_maximum_pairwise_product/max_pairwise_product.py",
+          "path": "problems/2_maximum_pairwise_product/max_pairwise_product.py",
           "language": "Python",
           "filename": "max_pairwise_product.py"
         }
       ],
-      "readme": "2_maximum_pairwise_product/README.md",
+      "readme": "problems/2_maximum_pairwise_product/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
       "problemNumberFormatted": "#080"
@@ -3665,42 +3665,42 @@
       },
       "sources": [
         {
-          "path": "2_maximum_value_of_the_loot/fractional_knapsack.cpp",
+          "path": "problems/2_maximum_value_of_the_loot/fractional_knapsack.cpp",
           "language": "C++",
           "filename": "fractional_knapsack.cpp"
         },
         {
-          "path": "2_maximum_value_of_the_loot/fractional_knapsack.hs",
+          "path": "problems/2_maximum_value_of_the_loot/fractional_knapsack.hs",
           "language": "Haskell",
           "filename": "fractional_knapsack.hs"
         },
         {
-          "path": "2_maximum_value_of_the_loot/FractionalKnapsack.java",
+          "path": "problems/2_maximum_value_of_the_loot/FractionalKnapsack.java",
           "language": "Java",
           "filename": "FractionalKnapsack.java"
         },
         {
-          "path": "2_maximum_value_of_the_loot/fractional_knapsack.js",
+          "path": "problems/2_maximum_value_of_the_loot/fractional_knapsack.js",
           "language": "JavaScript",
           "filename": "fractional_knapsack.js"
         },
         {
-          "path": "2_maximum_value_of_the_loot/FractionalKnapsack.kt",
+          "path": "problems/2_maximum_value_of_the_loot/FractionalKnapsack.kt",
           "language": "Kotlin",
           "filename": "FractionalKnapsack.kt"
         },
         {
-          "path": "2_maximum_value_of_the_loot/fractional_knapsack.py",
+          "path": "problems/2_maximum_value_of_the_loot/fractional_knapsack.py",
           "language": "Python",
           "filename": "fractional_knapsack.py"
         },
         {
-          "path": "2_maximum_value_of_the_loot/fractional_knapsack.rb",
+          "path": "problems/2_maximum_value_of_the_loot/fractional_knapsack.rb",
           "language": "Ruby",
           "filename": "fractional_knapsack.rb"
         }
       ],
-      "readme": "2_maximum_value_of_the_loot/README.md",
+      "readme": "problems/2_maximum_value_of_the_loot/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-units-on-a-truck/",
       "problemNumberFormatted": "#081"
@@ -3737,27 +3737,27 @@
       },
       "sources": [
         {
-          "path": "2_partitioning_souvenirs/partition3.cpp",
+          "path": "problems/2_partitioning_souvenirs/partition3.cpp",
           "language": "C++",
           "filename": "partition3.cpp"
         },
         {
-          "path": "2_partitioning_souvenirs/Partition3.java",
+          "path": "problems/2_partitioning_souvenirs/Partition3.java",
           "language": "Java",
           "filename": "Partition3.java"
         },
         {
-          "path": "2_partitioning_souvenirs/Partition3.kt",
+          "path": "problems/2_partitioning_souvenirs/Partition3.kt",
           "language": "Kotlin",
           "filename": "Partition3.kt"
         },
         {
-          "path": "2_partitioning_souvenirs/partition3.py",
+          "path": "problems/2_partitioning_souvenirs/partition3.py",
           "language": "Python",
           "filename": "partition3.py"
         }
       ],
-      "readme": "2_partitioning_souvenirs/README.md",
+      "readme": "problems/2_partitioning_souvenirs/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
       "problemNumberFormatted": "#082"
@@ -3794,32 +3794,32 @@
       },
       "sources": [
         {
-          "path": "2_primitive_calculator/primitive_calculator.cpp",
+          "path": "problems/2_primitive_calculator/primitive_calculator.cpp",
           "language": "C++",
           "filename": "primitive_calculator.cpp"
         },
         {
-          "path": "2_primitive_calculator/PrimitiveCalculator.java",
+          "path": "problems/2_primitive_calculator/PrimitiveCalculator.java",
           "language": "Java",
           "filename": "PrimitiveCalculator.java"
         },
         {
-          "path": "2_primitive_calculator/PrimitiveCalculator.kt",
+          "path": "problems/2_primitive_calculator/PrimitiveCalculator.kt",
           "language": "Kotlin",
           "filename": "PrimitiveCalculator.kt"
         },
         {
-          "path": "2_primitive_calculator/primitive_calculator.py",
+          "path": "problems/2_primitive_calculator/primitive_calculator.py",
           "language": "Python",
           "filename": "primitive_calculator.py"
         },
         {
-          "path": "2_primitive_calculator/primitive_calculator.rb",
+          "path": "problems/2_primitive_calculator/primitive_calculator.rb",
           "language": "Ruby",
           "filename": "primitive_calculator.rb"
         }
       ],
-      "readme": "2_primitive_calculator/README.md",
+      "readme": "problems/2_primitive_calculator/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/perfect-squares/",
       "problemNumberFormatted": "#083"
@@ -3856,22 +3856,22 @@
       },
       "sources": [
         {
-          "path": "3_car_fueling/car_fueling.cpp",
+          "path": "problems/3_car_fueling/car_fueling.cpp",
           "language": "C++",
           "filename": "car_fueling.cpp"
         },
         {
-          "path": "3_car_fueling/CarFueling.java",
+          "path": "problems/3_car_fueling/CarFueling.java",
           "language": "Java",
           "filename": "CarFueling.java"
         },
         {
-          "path": "3_car_fueling/car_fueling.py",
+          "path": "problems/3_car_fueling/car_fueling.py",
           "language": "Python",
           "filename": "car_fueling.py"
         }
       ],
-      "readme": "3_car_fueling/README.md",
+      "readme": "problems/3_car_fueling/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/gas-station/",
       "problemNumberFormatted": "#084"
@@ -3908,32 +3908,32 @@
       },
       "sources": [
         {
-          "path": "3_edit_distance/edit_distance.cpp",
+          "path": "problems/3_edit_distance/edit_distance.cpp",
           "language": "C++",
           "filename": "edit_distance.cpp"
         },
         {
-          "path": "3_edit_distance/EditDistance.java",
+          "path": "problems/3_edit_distance/EditDistance.java",
           "language": "Java",
           "filename": "EditDistance.java"
         },
         {
-          "path": "3_edit_distance/EditDistance.kt",
+          "path": "problems/3_edit_distance/EditDistance.kt",
           "language": "Kotlin",
           "filename": "EditDistance.kt"
         },
         {
-          "path": "3_edit_distance/edit_distance.py",
+          "path": "problems/3_edit_distance/edit_distance.py",
           "language": "Python",
           "filename": "edit_distance.py"
         },
         {
-          "path": "3_edit_distance/edit_distance.rb",
+          "path": "problems/3_edit_distance/edit_distance.rb",
           "language": "Ruby",
           "filename": "edit_distance.rb"
         }
       ],
-      "readme": "3_edit_distance/README.md",
+      "readme": "problems/3_edit_distance/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/edit-distance/",
       "problemNumberFormatted": "#085"
@@ -3970,12 +3970,12 @@
       },
       "sources": [
         {
-          "path": "3_greatest_common_divisor/gcd.py",
+          "path": "problems/3_greatest_common_divisor/gcd.py",
           "language": "Python",
           "filename": "gcd.py"
         }
       ],
-      "readme": "3_greatest_common_divisor/README.md",
+      "readme": "problems/3_greatest_common_divisor/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
       "problemNumberFormatted": "#086"
@@ -4012,32 +4012,32 @@
       },
       "sources": [
         {
-          "path": "3_improving_quicksort/sorting.cpp",
+          "path": "problems/3_improving_quicksort/sorting.cpp",
           "language": "C++",
           "filename": "sorting.cpp"
         },
         {
-          "path": "3_improving_quicksort/Sorting.java",
+          "path": "problems/3_improving_quicksort/Sorting.java",
           "language": "Java",
           "filename": "Sorting.java"
         },
         {
-          "path": "3_improving_quicksort/Sorting.kt",
+          "path": "problems/3_improving_quicksort/Sorting.kt",
           "language": "Kotlin",
           "filename": "Sorting.kt"
         },
         {
-          "path": "3_improving_quicksort/sorting.py",
+          "path": "problems/3_improving_quicksort/sorting.py",
           "language": "Python",
           "filename": "sorting.py"
         },
         {
-          "path": "3_improving_quicksort/sorting.rb",
+          "path": "problems/3_improving_quicksort/sorting.rb",
           "language": "Ruby",
           "filename": "sorting.rb"
         }
       ],
-      "readme": "3_improving_quicksort/README.md",
+      "readme": "problems/3_improving_quicksort/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/sort-colors/",
       "problemNumberFormatted": "#087"
@@ -4074,32 +4074,32 @@
       },
       "sources": [
         {
-          "path": "3_maximum_value_of_an_arithmetic_expression/placing_parentheses.cpp",
+          "path": "problems/3_maximum_value_of_an_arithmetic_expression/placing_parentheses.cpp",
           "language": "C++",
           "filename": "placing_parentheses.cpp"
         },
         {
-          "path": "3_maximum_value_of_an_arithmetic_expression/PlacingParentheses.java",
+          "path": "problems/3_maximum_value_of_an_arithmetic_expression/PlacingParentheses.java",
           "language": "Java",
           "filename": "PlacingParentheses.java"
         },
         {
-          "path": "3_maximum_value_of_an_arithmetic_expression/PlacingParentheses.kt",
+          "path": "problems/3_maximum_value_of_an_arithmetic_expression/PlacingParentheses.kt",
           "language": "Kotlin",
           "filename": "PlacingParentheses.kt"
         },
         {
-          "path": "3_maximum_value_of_an_arithmetic_expression/placing_parentheses.py",
+          "path": "problems/3_maximum_value_of_an_arithmetic_expression/placing_parentheses.py",
           "language": "Python",
           "filename": "placing_parentheses.py"
         },
         {
-          "path": "3_maximum_value_of_an_arithmetic_expression/placing_parentheses.rb",
+          "path": "problems/3_maximum_value_of_an_arithmetic_expression/placing_parentheses.rb",
           "language": "Ruby",
           "filename": "placing_parentheses.rb"
         }
       ],
-      "readme": "3_maximum_value_of_an_arithmetic_expression/README.md",
+      "readme": "problems/3_maximum_value_of_an_arithmetic_expression/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/different-ways-to-add-parentheses/",
       "problemNumberFormatted": "#088"
@@ -4136,12 +4136,12 @@
       },
       "sources": [
         {
-          "path": "4_least_common_multiple/lcm.py",
+          "path": "problems/4_least_common_multiple/lcm.py",
           "language": "Python",
           "filename": "lcm.py"
         }
       ],
-      "readme": "4_least_common_multiple/README.md",
+      "readme": "problems/4_least_common_multiple/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
       "problemNumberFormatted": "#089"
@@ -4178,27 +4178,27 @@
       },
       "sources": [
         {
-          "path": "4_longest_common_subsequence_of_two_sequences/lcs2.cpp",
+          "path": "problems/4_longest_common_subsequence_of_two_sequences/lcs2.cpp",
           "language": "C++",
           "filename": "lcs2.cpp"
         },
         {
-          "path": "4_longest_common_subsequence_of_two_sequences/LCS2.java",
+          "path": "problems/4_longest_common_subsequence_of_two_sequences/LCS2.java",
           "language": "Java",
           "filename": "LCS2.java"
         },
         {
-          "path": "4_longest_common_subsequence_of_two_sequences/LCS2.kt",
+          "path": "problems/4_longest_common_subsequence_of_two_sequences/LCS2.kt",
           "language": "Kotlin",
           "filename": "LCS2.kt"
         },
         {
-          "path": "4_longest_common_subsequence_of_two_sequences/lcs2.py",
+          "path": "problems/4_longest_common_subsequence_of_two_sequences/lcs2.py",
           "language": "Python",
           "filename": "lcs2.py"
         }
       ],
-      "readme": "4_longest_common_subsequence_of_two_sequences/README.md",
+      "readme": "problems/4_longest_common_subsequence_of_two_sequences/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/longest-common-subsequence/",
       "problemNumberFormatted": "#090"
@@ -4235,37 +4235,37 @@
       },
       "sources": [
         {
-          "path": "4_maximum_advertisement_revenue/dot_product.cpp",
+          "path": "problems/4_maximum_advertisement_revenue/dot_product.cpp",
           "language": "C++",
           "filename": "dot_product.cpp"
         },
         {
-          "path": "4_maximum_advertisement_revenue/dot_product.hs",
+          "path": "problems/4_maximum_advertisement_revenue/dot_product.hs",
           "language": "Haskell",
           "filename": "dot_product.hs"
         },
         {
-          "path": "4_maximum_advertisement_revenue/DotProduct.java",
+          "path": "problems/4_maximum_advertisement_revenue/DotProduct.java",
           "language": "Java",
           "filename": "DotProduct.java"
         },
         {
-          "path": "4_maximum_advertisement_revenue/DotProduct.kt",
+          "path": "problems/4_maximum_advertisement_revenue/DotProduct.kt",
           "language": "Kotlin",
           "filename": "DotProduct.kt"
         },
         {
-          "path": "4_maximum_advertisement_revenue/dot_product.py",
+          "path": "problems/4_maximum_advertisement_revenue/dot_product.py",
           "language": "Python",
           "filename": "dot_product.py"
         },
         {
-          "path": "4_maximum_advertisement_revenue/dot_rpoduct.rb",
+          "path": "problems/4_maximum_advertisement_revenue/dot_rpoduct.rb",
           "language": "Ruby",
           "filename": "dot_rpoduct.rb"
         }
       ],
-      "readme": "4_maximum_advertisement_revenue/README.md",
+      "readme": "problems/4_maximum_advertisement_revenue/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-length-of-pair-chain/",
       "problemNumberFormatted": "#091"
@@ -4302,32 +4302,32 @@
       },
       "sources": [
         {
-          "path": "4_number_of_inversions/inversions.cpp",
+          "path": "problems/4_number_of_inversions/inversions.cpp",
           "language": "C++",
           "filename": "inversions.cpp"
         },
         {
-          "path": "4_number_of_inversions/Inversions.java",
+          "path": "problems/4_number_of_inversions/Inversions.java",
           "language": "Java",
           "filename": "Inversions.java"
         },
         {
-          "path": "4_number_of_inversions/Inversions.kt",
+          "path": "problems/4_number_of_inversions/Inversions.kt",
           "language": "Kotlin",
           "filename": "Inversions.kt"
         },
         {
-          "path": "4_number_of_inversions/inversions.py",
+          "path": "problems/4_number_of_inversions/inversions.py",
           "language": "Python",
           "filename": "inversions.py"
         },
         {
-          "path": "4_number_of_inversions/inversions.rb",
+          "path": "problems/4_number_of_inversions/inversions.rb",
           "language": "Ruby",
           "filename": "inversions.rb"
         }
       ],
-      "readme": "4_number_of_inversions/README.md",
+      "readme": "problems/4_number_of_inversions/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
       "problemNumberFormatted": "#092"
@@ -4364,37 +4364,37 @@
       },
       "sources": [
         {
-          "path": "5_collecting_signatures/covering_segments.cpp",
+          "path": "problems/5_collecting_signatures/covering_segments.cpp",
           "language": "C++",
           "filename": "covering_segments.cpp"
         },
         {
-          "path": "5_collecting_signatures/covering_segments.hs",
+          "path": "problems/5_collecting_signatures/covering_segments.hs",
           "language": "Haskell",
           "filename": "covering_segments.hs"
         },
         {
-          "path": "5_collecting_signatures/CoveringSegments.java",
+          "path": "problems/5_collecting_signatures/CoveringSegments.java",
           "language": "Java",
           "filename": "CoveringSegments.java"
         },
         {
-          "path": "5_collecting_signatures/CoveringSegments.kt",
+          "path": "problems/5_collecting_signatures/CoveringSegments.kt",
           "language": "Kotlin",
           "filename": "CoveringSegments.kt"
         },
         {
-          "path": "5_collecting_signatures/covering_segments.py",
+          "path": "problems/5_collecting_signatures/covering_segments.py",
           "language": "Python",
           "filename": "covering_segments.py"
         },
         {
-          "path": "5_collecting_signatures/covering_segments.rb",
+          "path": "problems/5_collecting_signatures/covering_segments.rb",
           "language": "Ruby",
           "filename": "covering_segments.rb"
         }
       ],
-      "readme": "5_collecting_signatures/README.md",
+      "readme": "problems/5_collecting_signatures/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
       "problemNumberFormatted": "#093"
@@ -4432,12 +4432,12 @@
       },
       "sources": [
         {
-          "path": "5_fibonacci_number_again/fibonacci_huge.py",
+          "path": "problems/5_fibonacci_number_again/fibonacci_huge.py",
           "language": "Python",
           "filename": "fibonacci_huge.py"
         }
       ],
-      "readme": "5_fibonacci_number_again/README.md",
+      "readme": "problems/5_fibonacci_number_again/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#094"
@@ -4474,32 +4474,32 @@
       },
       "sources": [
         {
-          "path": "5_longest_common_subsequence_of_three_sequences/lcs3.cpp",
+          "path": "problems/5_longest_common_subsequence_of_three_sequences/lcs3.cpp",
           "language": "C++",
           "filename": "lcs3.cpp"
         },
         {
-          "path": "5_longest_common_subsequence_of_three_sequences/LCS3.java",
+          "path": "problems/5_longest_common_subsequence_of_three_sequences/LCS3.java",
           "language": "Java",
           "filename": "LCS3.java"
         },
         {
-          "path": "5_longest_common_subsequence_of_three_sequences/LCS3.kt",
+          "path": "problems/5_longest_common_subsequence_of_three_sequences/LCS3.kt",
           "language": "Kotlin",
           "filename": "LCS3.kt"
         },
         {
-          "path": "5_longest_common_subsequence_of_three_sequences/lcs3.py",
+          "path": "problems/5_longest_common_subsequence_of_three_sequences/lcs3.py",
           "language": "Python",
           "filename": "lcs3.py"
         },
         {
-          "path": "5_longest_common_subsequence_of_three_sequences/lcs3.rb",
+          "path": "problems/5_longest_common_subsequence_of_three_sequences/lcs3.rb",
           "language": "Ruby",
           "filename": "lcs3.rb"
         }
       ],
-      "readme": "5_longest_common_subsequence_of_three_sequences/README.md",
+      "readme": "problems/5_longest_common_subsequence_of_three_sequences/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/longest-common-subsequence/",
       "problemNumberFormatted": "#095"
@@ -4536,32 +4536,32 @@
       },
       "sources": [
         {
-          "path": "5_organizing_a_lottery/points_and_segments.cpp",
+          "path": "problems/5_organizing_a_lottery/points_and_segments.cpp",
           "language": "C++",
           "filename": "points_and_segments.cpp"
         },
         {
-          "path": "5_organizing_a_lottery/PointsAndSegments.java",
+          "path": "problems/5_organizing_a_lottery/PointsAndSegments.java",
           "language": "Java",
           "filename": "PointsAndSegments.java"
         },
         {
-          "path": "5_organizing_a_lottery/PointsAndSegments.kt",
+          "path": "problems/5_organizing_a_lottery/PointsAndSegments.kt",
           "language": "Kotlin",
           "filename": "PointsAndSegments.kt"
         },
         {
-          "path": "5_organizing_a_lottery/points_and_segments.py",
+          "path": "problems/5_organizing_a_lottery/points_and_segments.py",
           "language": "Python",
           "filename": "points_and_segments.py"
         },
         {
-          "path": "5_organizing_a_lottery/points_and_segments.rb",
+          "path": "problems/5_organizing_a_lottery/points_and_segments.rb",
           "language": "Ruby",
           "filename": "points_and_segments.rb"
         }
       ],
-      "readme": "5_organizing_a_lottery/README.md",
+      "readme": "problems/5_organizing_a_lottery/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
       "problemNumberFormatted": "#096"
@@ -4598,32 +4598,32 @@
       },
       "sources": [
         {
-          "path": "6_closest_points/closest.cpp",
+          "path": "problems/6_closest_points/closest.cpp",
           "language": "C++",
           "filename": "closest.cpp"
         },
         {
-          "path": "6_closest_points/Closest.java",
+          "path": "problems/6_closest_points/Closest.java",
           "language": "Java",
           "filename": "Closest.java"
         },
         {
-          "path": "6_closest_points/Closest.kt",
+          "path": "problems/6_closest_points/Closest.kt",
           "language": "Kotlin",
           "filename": "Closest.kt"
         },
         {
-          "path": "6_closest_points/closest.py",
+          "path": "problems/6_closest_points/closest.py",
           "language": "Python",
           "filename": "closest.py"
         },
         {
-          "path": "6_closest_points/closest.rb",
+          "path": "problems/6_closest_points/closest.rb",
           "language": "Ruby",
           "filename": "closest.rb"
         }
       ],
-      "readme": "6_closest_points/README.md",
+      "readme": "problems/6_closest_points/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/k-closest-points-to-origin/",
       "problemNumberFormatted": "#097"
@@ -4660,17 +4660,17 @@
       },
       "sources": [
         {
-          "path": "6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.py",
+          "path": "problems/6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.py",
           "language": "Python",
           "filename": "fibonacci_sum_last_digit.py"
         },
         {
-          "path": "6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.rb",
+          "path": "problems/6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.rb",
           "language": "Ruby",
           "filename": "fibonacci_sum_last_digit.rb"
         }
       ],
-      "readme": "6_last_digit_of_the_sum_of_fibonacci_numbers/README.md",
+      "readme": "problems/6_last_digit_of_the_sum_of_fibonacci_numbers/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#098"
@@ -4707,37 +4707,37 @@
       },
       "sources": [
         {
-          "path": "6_maximum_number_of_prizes/different_summands.cpp",
+          "path": "problems/6_maximum_number_of_prizes/different_summands.cpp",
           "language": "C++",
           "filename": "different_summands.cpp"
         },
         {
-          "path": "6_maximum_number_of_prizes/different_summands.hs",
+          "path": "problems/6_maximum_number_of_prizes/different_summands.hs",
           "language": "Haskell",
           "filename": "different_summands.hs"
         },
         {
-          "path": "6_maximum_number_of_prizes/DifferentSummands.java",
+          "path": "problems/6_maximum_number_of_prizes/DifferentSummands.java",
           "language": "Java",
           "filename": "DifferentSummands.java"
         },
         {
-          "path": "6_maximum_number_of_prizes/DifferentSummands.kt",
+          "path": "problems/6_maximum_number_of_prizes/DifferentSummands.kt",
           "language": "Kotlin",
           "filename": "DifferentSummands.kt"
         },
         {
-          "path": "6_maximum_number_of_prizes/different_summands.py",
+          "path": "problems/6_maximum_number_of_prizes/different_summands.py",
           "language": "Python",
           "filename": "different_summands.py"
         },
         {
-          "path": "6_maximum_number_of_prizes/different_summands.rb",
+          "path": "problems/6_maximum_number_of_prizes/different_summands.rb",
           "language": "Ruby",
           "filename": "different_summands.rb"
         }
       ],
-      "readme": "6_maximum_number_of_prizes/README.md",
+      "readme": "problems/6_maximum_number_of_prizes/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/",
       "problemNumberFormatted": "#099"
@@ -4774,12 +4774,12 @@
       },
       "sources": [
         {
-          "path": "7_last_digit_of_the_sum_of_fibonacci_numbers_again/fibonacci_partial_sum.py",
+          "path": "problems/7_last_digit_of_the_sum_of_fibonacci_numbers_again/fibonacci_partial_sum.py",
           "language": "Python",
           "filename": "fibonacci_partial_sum.py"
         }
       ],
-      "readme": "7_last_digit_of_the_sum_of_fibonacci_numbers_again/README.md",
+      "readme": "problems/7_last_digit_of_the_sum_of_fibonacci_numbers_again/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#100"
@@ -4816,37 +4816,37 @@
       },
       "sources": [
         {
-          "path": "7_maximum_salary/largest_number.cpp",
+          "path": "problems/7_maximum_salary/largest_number.cpp",
           "language": "C++",
           "filename": "largest_number.cpp"
         },
         {
-          "path": "7_maximum_salary/largest_number.hs",
+          "path": "problems/7_maximum_salary/largest_number.hs",
           "language": "Haskell",
           "filename": "largest_number.hs"
         },
         {
-          "path": "7_maximum_salary/LargestNumber.java",
+          "path": "problems/7_maximum_salary/LargestNumber.java",
           "language": "Java",
           "filename": "LargestNumber.java"
         },
         {
-          "path": "7_maximum_salary/LargestNumber.kt",
+          "path": "problems/7_maximum_salary/LargestNumber.kt",
           "language": "Kotlin",
           "filename": "LargestNumber.kt"
         },
         {
-          "path": "7_maximum_salary/largest_number.py",
+          "path": "problems/7_maximum_salary/largest_number.py",
           "language": "Python",
           "filename": "largest_number.py"
         },
         {
-          "path": "7_maximum_salary/largest_number.rb",
+          "path": "problems/7_maximum_salary/largest_number.rb",
           "language": "Ruby",
           "filename": "largest_number.rb"
         }
       ],
-      "readme": "7_maximum_salary/README.md",
+      "readme": "problems/7_maximum_salary/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/largest-number/",
       "problemNumberFormatted": "#101"
@@ -4883,12 +4883,12 @@
       },
       "sources": [
         {
-          "path": "8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers/fibonacci_sum_squares.py",
+          "path": "problems/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers/fibonacci_sum_squares.py",
           "language": "Python",
           "filename": "fibonacci_sum_squares.py"
         }
       ],
-      "readme": "8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers/README.md",
+      "readme": "problems/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/fibonacci-number/",
       "problemNumberFormatted": "#102"

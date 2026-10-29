@@ -54,8 +54,9 @@ METADATA_FIELDS = [
 def find_problem_folders(root: Path) -> List[Path]:
     """Return all directories containing source code files."""
     folders: List[Path] = []
-    for d in sorted(root.iterdir(), key=lambda p: p.name.lower()):
-        if not d.is_dir() or d.name.startswith(".") or d.name in IGNORED_DIRECTORIES:
+    scan_dir = root / "problems" if (root / "problems").is_dir() else root
+    for d in sorted(scan_dir.iterdir(), key=lambda p: p.name.lower()):
+        if not d.is_dir() or d.name.startswith(".") or d.name in IGNORED_DIRECTORIES or d.name == "problems":
             continue
         code_files = [f for f in d.iterdir() if f.is_file() and f.suffix.lower() in CODE_EXTENSIONS]
         if code_files:
@@ -148,7 +149,7 @@ def run_audit(root: Path) -> int:
 
 def scaffold_problem(root: Path, folder_name: str) -> None:
     """Scaffold a REVISION.md template for a new problem folder."""
-    target_dir = root / folder_name
+    target_dir = (root / "problems" / folder_name) if (root / "problems").is_dir() else (root / folder_name)
     if not target_dir.is_dir():
         target_dir.mkdir(parents=True, exist_ok=True)
         print(f"Created problem directory: {target_dir}")
