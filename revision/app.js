@@ -1,7 +1,48 @@
 "use strict";
 
 const STORAGE_KEY = "dsa-revision-progress-v1";
+const THEME_KEY = "dsa-revision-theme-v1";
 const DAY = 24 * 60 * 60 * 1000;
+
+function getPreferredTheme() {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === "dark" || saved === "light") return saved;
+  } catch {}
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeMeta) {
+    themeMeta.setAttribute("content", theme === "dark" ? "#0b0f19" : "#f6f5ef");
+  }
+  const icon = document.querySelector("#theme-toggle-btn .theme-icon");
+  const label = document.querySelector("#theme-label");
+  if (icon && label) {
+    if (theme === "dark") {
+      icon.textContent = "☀️";
+      label.textContent = "Light";
+    } else {
+      icon.textContent = "🌙";
+      label.textContent = "Dark";
+    }
+  }
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme") || getPreferredTheme();
+  const next = current === "dark" ? "light" : "dark";
+  try {
+    localStorage.setItem(THEME_KEY, next);
+  } catch {}
+  applyTheme(next);
+  displayMessage(`Switched to ${next} theme.`);
+}
+
+// Apply theme instantly on script parse to eliminate flash of light mode
+applyTheme(getPreferredTheme());
 
 const elements = {
   answer: document.querySelector("#answer"),
@@ -61,6 +102,7 @@ const elements = {
   shuffleButton: document.querySelector("#shuffle-button"),
   sourceCode: document.querySelector("#source-code"),
   statusFilter: document.querySelector("#status-filter"),
+  themeToggleBtn: document.querySelector("#theme-toggle-btn"),
   topicFilter: document.querySelector("#topic-filter")
 };
 
@@ -819,11 +861,28 @@ function bindEvents() {
       rateCard("good");
     } else if (event.key === "4") {
       rateCard("easy");
+    } else if (event.key === "/" && !elements.markdownModal.hidden) {
+      return;
     } else if (event.key === "/") {
       event.preventDefault();
       elements.searchInput.focus();
+    } else if (event.key === "t" || event.key === "T") {
+      event.preventDefault();
+      toggleTheme();
     }
   });
+
+  elements.themeToggleBtn?.addEventListener("click", toggleTheme);
+
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+      try {
+        if (!localStorage.getItem(THEME_KEY)) {
+          applyTheme(e.matches ? "dark" : "light");
+        }
+      } catch {}
+    });
+  }
 }
 
 async function start() {
