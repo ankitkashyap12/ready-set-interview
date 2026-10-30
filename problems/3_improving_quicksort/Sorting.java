@@ -4,14 +4,37 @@ import java.util.*;
 public class Sorting {
     private static Random random = new Random();
 
+    /**
+     * 3-way partitioning (Dutch National Flag) around pivot x = a[l].
+     * Divides a[l..r] into:
+     * - a[l .. m1 - 1] < x
+     * - a[m1 .. m2] == x
+     * - a[m2 + 1 .. r] > x
+     */
     private static int[] partition3(int[] a, int l, int r) {
-      //write your code here
+        int x = a[l];
+        int m1 = l;
+        int i = l;
+        int m2 = r;
 
+        while (i <= m2) {
+            if (a[i] < x) {
+                int t = a[i];
+                a[i] = a[m1];
+                a[m1] = t;
+                m1++;
+                i++;
+            } else if (a[i] > x) {
+                int t = a[i];
+                a[i] = a[m2];
+                a[m2] = t;
+                m2--;
+            } else {
+                i++;
+            }
+        }
 
-      int m1 = l;
-      int m2 = r;
-      int[] m = {m1, m2};
-      return m;
+        return new int[]{m1, m2};
     }
 
     private static int partition2(int[] a, int l, int r) {
@@ -39,10 +62,9 @@ public class Sorting {
         int t = a[l];
         a[l] = a[k];
         a[k] = t;
-        //use partition3
-        int m = partition2(a, l, r);
-        randomizedQuickSort(a, l, m - 1);
-        randomizedQuickSort(a, m + 1, r);
+        int[] m = partition3(a, l, r);
+        randomizedQuickSort(a, l, m[0] - 1);
+        randomizedQuickSort(a, m[1] + 1, r);
     }
 
     public static void main(String[] args) {

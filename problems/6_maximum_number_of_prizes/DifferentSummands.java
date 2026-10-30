@@ -1,9 +1,20 @@
 import java.util.*;
 
 public class DifferentSummands {
+    /**
+     * Represents n as a sum of maximum number of pairwise distinct positive integers.
+     * Time Complexity: O(sqrt(n))
+     * Space Complexity: O(sqrt(n))
+     */
     private static List<Integer> optimalSummands(int n) {
-        List<Integer> summands = new ArrayList<Integer>();
-        //write your code here
+        List<Integer> summands = new ArrayList<>();
+        int k = 1;
+        while (n > 2 * k) {
+            summands.add(k);
+            n -= k;
+            k++;
+        }
+        summands.add(n);
         return summands;
     }
     

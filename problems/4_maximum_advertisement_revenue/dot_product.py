@@ -3,11 +3,14 @@
 import sys
 
 def max_dot_product(a, b):
-    #write your code here
-    res = 0
-    for i in range(len(a)):
-        res += a[i] * b[i]
-    return res
+    """
+    Maximizes advertisement revenue by sorting click values and ad slots (Rearrangement Inequality).
+    Time Complexity: O(n log n)
+    Space Complexity: O(1) beyond sorting
+    """
+    a.sort()
+    b.sort()
+    return sum(x * y for x, y in zip(a, b))
 
 if __name__ == '__main__':
     input = sys.stdin.read()

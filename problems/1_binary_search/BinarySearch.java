@@ -3,10 +3,23 @@ import java.util.*;
 
 public class BinarySearch {
 
+    /**
+     * Binary search for target x in sorted array a.
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
     static int binarySearch(int[] a, int x) {
-        int left = 0, right = a.length;
-        //write your code here
-
+        int left = 0, right = a.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (a[mid] == x) {
+                return mid;
+            } else if (a[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
         return -1;
     }
 
@@ -29,10 +42,11 @@ public class BinarySearch {
         for (int i = 0; i < m; i++) {
           b[i] = scanner.nextInt();
         }
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < m; i++) {
-            //replace with the call to binarySearch when implemented
-            System.out.print(linearSearch(a, b[i]) + " ");
+            sb.append(binarySearch(a, b[i])).append(i == m - 1 ? "" : " ");
         }
+        System.out.println(sb);
     }
     static class FastScanner {
         BufferedReader br;

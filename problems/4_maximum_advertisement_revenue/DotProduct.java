@@ -1,11 +1,17 @@
 import java.util.*;
 
 public class DotProduct {
+    /**
+     * Maximizes advertisement revenue by sorting both sequences (Rearrangement Inequality).
+     * Time Complexity: O(n log n)
+     * Space Complexity: O(1)
+     */
     private static long maxDotProduct(int[] a, int[] b) {
-        //write your code here
+        Arrays.sort(a);
+        Arrays.sort(b);
         long result = 0;
         for (int i = 0; i < a.length; i++) {
-            result += a[i] * b[i];
+            result += (long) a[i] * b[i];
         }
         return result;
     }

@@ -2,15 +2,36 @@ import java.util.*;
 import java.io.*;
 
 public class MajorityElement {
+    /**
+     * Boyer-Moore Voting algorithm to find majority element in a[left...right-1].
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     */
     private static int getMajorityElement(int[] a, int left, int right) {
-        if (left == right) {
+        if (left >= right) {
             return -1;
         }
-        if (left + 1 == right) {
-            return a[left];
+        int candidate = a[left];
+        int count = 0;
+        for (int i = left; i < right; i++) {
+            if (count == 0) {
+                candidate = a[i];
+                count = 1;
+            } else if (a[i] == candidate) {
+                count++;
+            } else {
+                count--;
+            }
         }
-        //write your code here
-        return -1;
+
+        // Verification pass
+        int actualCount = 0;
+        for (int i = left; i < right; i++) {
+            if (a[i] == candidate) {
+                actualCount++;
+            }
+        }
+        return actualCount > (right - left) / 2 ? candidate : -1;
     }
 
     public static void main(String[] args) {

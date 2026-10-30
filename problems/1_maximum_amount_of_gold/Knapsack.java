@@ -1,15 +1,19 @@
 import java.util.*;
 
 public class Knapsack {
+    /**
+     * 0-1 Knapsack without repetition to find maximum weight of gold that fits in capacity W.
+     * Time Complexity: O(n * W)
+     * Space Complexity: O(W) using backwards rolling 1D array
+     */
     static int optimalWeight(int W, int[] w) {
-        //write you code here
-        int result = 0;
-        for (int i = 0; i < w.length; i++) {
-          if (result + w[i] <= W) {
-            result += w[i];
-          }
+        int[] dp = new int[W + 1];
+        for (int weight : w) {
+            for (int j = W; j >= weight; j--) {
+                dp[j] = Math.max(dp[j], dp[j - weight] + weight);
+            }
         }
-        return result;
+        return dp[W];
     }
 
     public static void main(String[] args) {

@@ -6,15 +6,6 @@
     "GeeksforGeeks",
     "LeetCode",
     "Other problems",
-    "Topic / Array",
-    "Topic / Dynamic Programming",
-    "Topic / Hash Table",
-    "Topic / Prefix Sum",
-    "Topic / Sliding Window",
-    "Topic / Sorting",
-    "Topic / Stack",
-    "Topic / String",
-    "Topic / Two Pointers",
     "📐 Algorithmic Paradigms & Foundations / Algorithmic Warmup & Number Theory",
     "📐 Algorithmic Paradigms & Foundations / Divide and Conquer",
     "📐 Algorithmic Paradigms & Foundations / Dynamic Programming",
@@ -170,8 +161,7 @@
         "Can you look up previously visited values in O(1) time using a hash map before inserting the current one?"
       ],
       "groups": [
-        "Topic / Array",
-        "Topic / Hash Table"
+        "LeetCode"
       ],
       "prompt": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
       "hasReadme": true,
@@ -255,9 +245,7 @@
         "Instead of shrinking left one step at a time, jump left directly past the previous occurrence of s[right]."
       ],
       "groups": [
-        "Topic / Hash Table",
-        "Topic / Sliding Window",
-        "Topic / String"
+        "LeetCode"
       ],
       "prompt": "Given a string s, find the length of the longest substring without duplicate characters.",
       "hasReadme": true,
@@ -425,8 +413,7 @@
         "Push the expected closing bracket when you encounter an opening bracket to make comparison trivial."
       ],
       "groups": [
-        "Topic / Stack",
-        "Topic / String"
+        "LeetCode"
       ],
       "prompt": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.\n\nAn input string is valid if:\n\nOpen brackets must be closed by the same type of brackets.\n\nOpen brackets must be closed in the correct order.\n\nEvery close bracket has a corresponding open bracket of the same type.",
       "hasReadme": true,
@@ -468,8 +455,7 @@
         "Keep updating the end of the current merged interval using max(endA, endB)."
       ],
       "groups": [
-        "Topic / Array",
-        "Topic / Sorting"
+        "LeetCode"
       ],
       "prompt": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
       "hasReadme": true,
@@ -679,8 +665,7 @@
         "Track the minimum price seen so far as you iterate through the list."
       ],
       "groups": [
-        "Topic / Array",
-        "Topic / Dynamic Programming"
+        "LeetCode"
       ],
       "prompt": "You are given an array prices where prices[i] is the price of a given stock on the ith day.\n\nYou want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.\n\nReturn the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.",
       "hasReadme": true,
@@ -722,8 +707,7 @@
         "Use isLetterOrDigit / isalnum to skip punctuation and spaces."
       ],
       "groups": [
-        "Topic / String",
-        "Topic / Two Pointers"
+        "LeetCode"
       ],
       "prompt": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\nGiven a string s, return true if it is a palindrome, or false otherwise.",
       "hasReadme": true,
@@ -891,9 +875,7 @@
         "Can you return true immediately as soon as a duplicate is seen?"
       ],
       "groups": [
-        "Topic / Array",
-        "Topic / Hash Table",
-        "Topic / Sorting"
+        "LeetCode"
       ],
       "prompt": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",
       "hasReadme": true,
@@ -982,8 +964,7 @@
         "Use the output array to store left products first, then multiply right products on the fly."
       ],
       "groups": [
-        "Topic / Array",
-        "Topic / Prefix Sum"
+        "LeetCode"
       ],
       "prompt": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].\n\nThe product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\n\nYou must write an algorithm that runs in O(n) time and without using the division operation.",
       "hasReadme": true,

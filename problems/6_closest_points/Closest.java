@@ -19,10 +19,56 @@ public class Closest {
         }
     }
 
-    static double minimalDistance(int[] x, int y[]) {
-        double ans = Double.POSITIVE_INFINITY;
-        //write your code here
-        return ans;
+    static double minimalDistance(int[] x, int[] y) {
+        int n = x.length;
+        Point[] points = new Point[n];
+        for (int i = 0; i < n; i++) {
+            points[i] = new Point(x[i], y[i]);
+        }
+        Arrays.sort(points, Comparator.comparingLong(p -> p.x));
+        return closestPair(points, 0, n - 1);
+    }
+
+    private static double dist(Point p1, Point p2) {
+        long dx = p1.x - p2.x;
+        long dy = p1.y - p2.y;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    private static double closestPair(Point[] pts, int l, int r) {
+        if (r - l + 1 <= 3) {
+            double minD = Double.POSITIVE_INFINITY;
+            for (int i = l; i <= r; i++) {
+                for (int j = i + 1; j <= r; j++) {
+                    minD = Math.min(minD, dist(pts[i], pts[j]));
+                }
+            }
+            return minD;
+        }
+
+        int mid = (l + r) / 2;
+        long midX = pts[mid].x;
+
+        double d1 = closestPair(pts, l, mid);
+        double d2 = closestPair(pts, mid + 1, r);
+        double d = Math.min(d1, d2);
+
+        List<Point> strip = new ArrayList<>();
+        for (int i = l; i <= r; i++) {
+            if (Math.abs(pts[i].x - midX) < d) {
+                strip.add(pts[i]);
+            }
+        }
+
+        strip.sort(Comparator.comparingLong(p -> p.y));
+
+        for (int i = 0; i < strip.size(); i++) {
+            for (int j = i + 1; j < strip.size() && (strip.get(j).y - strip.get(i).y) < d; j++) {
+                d = Math.min(d, dist(strip.get(i), strip.get(j)));
+            }
+        }
+
+        return d;
     }
 
     public static void main(String[] args) throws Exception {

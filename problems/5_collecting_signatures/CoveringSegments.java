@@ -2,14 +2,34 @@ import java.util.*;
 
 public class CoveringSegments {
 
+    /**
+     * Finds the minimum set of points covering all segments.
+     * Greedy strategy: sort by segment end points ascending.
+     * Time Complexity: O(n log n)
+     * Space Complexity: O(n)
+     */
     private static int[] optimalPoints(Segment[] segments) {
-        //write your code here
-        int[] points = new int[2 * segments.length];
-        for (int i = 0; i < segments.length; i++) {
-            points[2 * i] = segments[i].start;
-            points[2 * i + 1] = segments[i].end;
+        if (segments == null || segments.length == 0) {
+            return new int[0];
         }
-        return points;
+
+        Arrays.sort(segments, Comparator.comparingInt(s -> s.end));
+        List<Integer> points = new ArrayList<>();
+        int currentPoint = segments[0].end;
+        points.add(currentPoint);
+
+        for (int i = 1; i < segments.length; i++) {
+            if (segments[i].start > currentPoint) {
+                currentPoint = segments[i].end;
+                points.add(currentPoint);
+            }
+        }
+
+        int[] result = new int[points.size()];
+        for (int i = 0; i < points.size(); i++) {
+            result[i] = points.get(i);
+        }
+        return result;
     }
 
     private static class Segment {

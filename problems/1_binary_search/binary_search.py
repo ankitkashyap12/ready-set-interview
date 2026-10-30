@@ -2,8 +2,22 @@
 import sys
 
 def binary_search(a, x):
-    left, right = 0, len(a)
-    # write your code here
+    """
+    Search for x in sorted array a.
+    Time Complexity: O(log n)
+    Space Complexity: O(1)
+    Returns: 0-based index of x if present, else -1.
+    """
+    left, right = 0, len(a) - 1
+    while left <= right:
+        mid = left + (right - left) // 2
+        if a[mid] == x:
+            return mid
+        elif a[mid] < x:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
 
 def linear_search(a, x):
     for i in range(len(a)):
@@ -12,11 +26,13 @@ def linear_search(a, x):
     return -1
 
 if __name__ == '__main__':
-    input = sys.stdin.read()
-    data = list(map(int, input.split()))
+    input_data = sys.stdin.read().split()
+    if not input_data:
+        sys.exit(0)
+    data = list(map(int, input_data))
     n = data[0]
-    m = data[n + 1]
     a = data[1 : n + 1]
-    for x in data[n + 2:]:
-        # replace with the call to binary_search when implemented
-        print(linear_search(a, x), end = ' ')
+    m = data[n + 1]
+    queries = data[n + 2 : n + 2 + m]
+    results = [binary_search(a, x) for x in queries]
+    print(' '.join(map(str, results)))
