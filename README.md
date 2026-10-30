@@ -4,9 +4,13 @@ A comprehensive repository and active recall revision platform for technical int
 
 ---
 
-## ⚡ Active Recall Revision Desk
+## ⚡ Active Recall Revision Desk & Interview Tracker
 
-Use the local-first **[DSA Revision Flashcards](./revision/)** for structured active recall, progressive interview hints, pattern recognition, and spaced-repetition tracking. 
+- 🌐 **Live Web App**: [ankitkashyap12.github.io/ready-set-interview](https://ankitkashyap12.github.io/ready-set-interview)
+- 🎯 **Senior Backend Interview Tracker**: [12-Week Study & Topic Tracker](./tracker.html)
+- 💻 **Local Flashcards App**: [DSA Revision Flashcards](./revision/)
+
+Use the interactive apps for structured active recall, progressive interview hints, pattern recognition, and spaced-repetition tracking. 
 
 See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protocol](./revision/FRAMEWORK.md) for local run instructions and metadata authoring.
 
