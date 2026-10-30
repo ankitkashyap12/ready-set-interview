@@ -44,3 +44,4 @@ public class MergeOverlappingIntervals {
         return mergedInterval.toArray(new int[mergedInterval.size()][]);
     }
 }
+

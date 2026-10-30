@@ -64,3 +64,4 @@ public class TwoSum {
         System.out.println(result[0] + " " + result[1]);
     }
 }
+

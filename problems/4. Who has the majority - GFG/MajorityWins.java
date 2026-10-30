@@ -38,3 +38,4 @@ public class MajorityWins {
         System.out.println(majorityWins(arr2, arr2.length, 1, 7)); // Output: 1
     }
 }
+

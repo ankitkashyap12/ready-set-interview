@@ -21,3 +21,4 @@ class Solution:
             suffix *= nums[i]
 
         return res
+

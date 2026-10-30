@@ -21,3 +21,4 @@ class Solution:
                 merged.append(current)
 
         return merged
+

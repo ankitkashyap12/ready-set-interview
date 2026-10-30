@@ -23,3 +23,4 @@ def majority_wins(arr, n, x, y):
 if __name__ == '__main__':
     print(majority_wins([1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 5], 11, 4, 5))  # 4
     print(majority_wins([1, 2, 3, 4, 5, 6, 7, 8], 8, 1, 7))             # 1
+
