@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "problemCount": 102,
-  "sourceCount": 191,
+  "problemCount": 97,
+  "sourceCount": 195,
   "groups": [
     "GeeksforGeeks",
     "LeetCode",
@@ -15,6 +15,7 @@
     "🧩 Core Patterns & Classic Problems / Sorting & Searching"
   ],
   "topics": [
+    "Arrays & Frequency Counting",
     "Arrays & Hashing",
     "Backtracking",
     "Binary Search",
@@ -70,6 +71,7 @@
     "Divide and Conquer (Merge Step)",
     "Divide and Conquer / Boyer-Moore Voting",
     "Divide and Conquer 2D Plane Split ($O(N \\log N)$)",
+    "Dual Counter Frequency Comparison",
     "Dutch National Flag (3-Way Partitioning)",
     "Dutch National Flag 3-Way Partitioning",
     "Dynamic Sliding Window with Last Seen Map",
@@ -87,7 +89,6 @@
     "Hash Map + Doubly Linked List",
     "Hash Map Complement Lookup",
     "Hash Map Score Tallying & Running Best",
-    "Hash Set / Map Complement Lookup",
     "Hash Set Early Exit",
     "In-place Sign Flipping (Index as Hash Key)",
     "Interval DP / Matrix Chain Placing Parentheses",
@@ -107,7 +108,6 @@
     "Pisano Period Modulo M",
     "Pivot Partitioning Divide and Conquer",
     "Prefix & Suffix Products",
-    "Prefix & Suffix Running Products",
     "Prefix Sum Difference of Fibonacci Modulo 10",
     "Prefix Sum Frequency / Set",
     "Primes Squared via Sieve / Trial Division",
@@ -120,7 +120,6 @@
     "Single Pass Top-2 Largest Elements",
     "Single Pass Two-Variable Tracking",
     "Slow & Fast Two Pointers (In-place Write)",
-    "Sort + Fixed Element + Two Pointers (3Sum)",
     "Sort + Fixed Pivot + Two Pointers",
     "Sort + Reverse Pivot + Two Pointers",
     "Sort by Start Time + Greedy Merge",
@@ -161,7 +160,7 @@
         "Can you look up previously visited values in O(1) time using a hash map before inserting the current one?"
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
       "hasReadme": true,
@@ -179,54 +178,22 @@
           "path": "problems/0001-two-sum/0001-two-sum.java",
           "language": "Java",
           "filename": "0001-two-sum.java"
+        },
+        {
+          "path": "problems/0001-two-sum/TwoSum.java",
+          "language": "Java",
+          "filename": "TwoSum.java"
+        },
+        {
+          "path": "problems/0001-two-sum/0001-two-sum.py",
+          "language": "Python",
+          "filename": "0001-two-sum.py"
         }
       ],
       "readme": "problems/0001-two-sum/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/two-sum/",
       "problemNumberFormatted": "#001"
-    },
-    {
-      "id": "1-two-sum",
-      "problemNumber": 2,
-      "title": "Two Sum",
-      "folder": "1-two-sum",
-      "difficulty": "Easy",
-      "frequentlyAsked": true,
-      "topic": "Arrays & Hashing",
-      "pattern": "Hash Map Complement Lookup",
-      "lcNumber": 1,
-      "lcTitle": "LC 1: Two Sum",
-      "lcUrl": "https://leetcode.com/problems/two-sum/",
-      "hints": [
-        "Do you need to sort the array? Sorting takes O(N log N) and loses original indices unless paired.",
-        "Check complement existence before recording the current element."
-      ],
-      "groups": [
-        "Other problems"
-      ],
-      "prompt": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How can you solve Two Sum in O(N) time and O(N) space using one single forward pass?",
-        "concept": "Maintain a hash table mapping each visited value to its index. For each number, compute complement = target - num. If complement is in the map, return the stored index and current index. Otherwise, record map[num] = index.",
-        "hints": "- **Hint 1**: Do you need to sort the array? Sorting takes O(N log N) and loses original indices unless paired.\n- **Hint 2**: Check complement existence before recording the current element.",
-        "pattern": "**Pattern**: Hash Map Complement Lookup\nUse when: Arrays & Hashing problems require efficient traversal or optimal sub-structure.",
-        "trick": "Single-pass hash table check-then-insert guarantees you never reuse the same index.",
-        "complexity": "Time: O(N) average time for hash table operations. Space: O(N) for the hash map.",
-        "edgeCases": "- Duplicate values forming target: [3, 3] target 6.\n- Array with negative values."
-      },
-      "sources": [
-        {
-          "path": "problems/1-two-sum/1-two-sum.java",
-          "language": "Java",
-          "filename": "1-two-sum.java"
-        }
-      ],
-      "readme": "problems/1-two-sum/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/two-sum/",
-      "problemNumberFormatted": "#002"
     },
     {
       "id": "0003-longest-substring-without-repeating-characters",
@@ -371,7 +338,7 @@
         "Fix the first element, then reduce the problem to 2Sum on the remaining sorted sub-array."
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\n\nNotice that the solution set must not contain duplicate triplets.",
       "hasReadme": true,
@@ -389,6 +356,16 @@
           "path": "problems/0015-3sum/0015-3sum.java",
           "language": "Java",
           "filename": "0015-3sum.java"
+        },
+        {
+          "path": "problems/0015-3sum/TripleSum.java",
+          "language": "Java",
+          "filename": "TripleSum.java"
+        },
+        {
+          "path": "problems/0015-3sum/0015-3sum.py",
+          "language": "Python",
+          "filename": "0015-3sum.py"
         }
       ],
       "readme": "problems/0015-3sum/README.md",
@@ -455,7 +432,7 @@
         "Keep updating the end of the current merged interval using max(endA, endB)."
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
       "hasReadme": true,
@@ -473,6 +450,16 @@
           "path": "problems/0056-merge-intervals/0056-merge-intervals.java",
           "language": "Java",
           "filename": "0056-merge-intervals.java"
+        },
+        {
+          "path": "problems/0056-merge-intervals/MergeOverlappingIntervals.java",
+          "language": "Java",
+          "filename": "MergeOverlappingIntervals.java"
+        },
+        {
+          "path": "problems/0056-merge-intervals/0056-merge-intervals.py",
+          "language": "Python",
+          "filename": "0056-merge-intervals.py"
         }
       ],
       "readme": "problems/0056-merge-intervals/README.md",
@@ -893,59 +880,17 @@
           "path": "problems/0217-contains-duplicate/0217-contains-duplicate.java",
           "language": "Java",
           "filename": "0217-contains-duplicate.java"
+        },
+        {
+          "path": "problems/0217-contains-duplicate/0217-contains-duplicate.py",
+          "language": "Python",
+          "filename": "0217-contains-duplicate.py"
         }
       ],
       "readme": "problems/0217-contains-duplicate/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/contains-duplicate/",
       "problemNumberFormatted": "#018"
-    },
-    {
-      "id": "217-contains-duplicate",
-      "problemNumber": 19,
-      "title": "Contains Duplicate",
-      "folder": "217-contains-duplicate",
-      "difficulty": "Easy",
-      "frequentlyAsked": true,
-      "topic": "Arrays & Hashing",
-      "pattern": "Hash Set Early Exit",
-      "lcNumber": 217,
-      "lcTitle": "LC 217: Contains Duplicate",
-      "lcUrl": "https://leetcode.com/problems/contains-duplicate/",
-      "hints": [
-        "Sort vs Hash Set trade-off: Sort is O(N log N) time and O(1) space; Hash Set is O(N) time and O(N) space.",
-        "In Java, set.add(num) returns false if the item was already present, allowing a single lookup-and-insert step."
-      ],
-      "groups": [
-        "Other problems"
-      ],
-      "prompt": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How to determine if an integer array contains any duplicate values in O(N) time?",
-        "concept": "Insert elements into a hash set. If an element is already present in the set, a duplicate exists; return true. Otherwise return false after processing all elements.",
-        "hints": "- **Hint 1**: Sort vs Hash Set trade-off: Sort is O(N log N) time and O(1) space; Hash Set is O(N) time and O(N) space.\n- **Hint 2**: In Java, set.add(num) returns false if the item was already present, allowing a single lookup-and-insert step.",
-        "pattern": "**Pattern**: Hash Set Early Exit\nUse when: Arrays & Hashing problems require efficient traversal or optimal sub-structure.",
-        "trick": "set.contains or !set.add(num) enables instant early exit on first duplicate found.",
-        "complexity": "Time: O(N) average. Space: O(N) for set.",
-        "edgeCases": "- Empty or 1 element: false.\n- Immediate duplicate: [1, 1, 1] -> true.\n- All distinct negative & positive numbers: [-1, 2, -3, 4] -> false."
-      },
-      "sources": [
-        {
-          "path": "problems/217-contains-duplicate/217-contains-duplicate.java",
-          "language": "Java",
-          "filename": "217-contains-duplicate.java"
-        },
-        {
-          "path": "problems/217-contains-duplicate/217-contains-duplicate.py",
-          "language": "Python",
-          "filename": "217-contains-duplicate.py"
-        }
-      ],
-      "readme": "problems/217-contains-duplicate/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/contains-duplicate/",
-      "problemNumberFormatted": "#019"
     },
     {
       "id": "0238-product-of-array-except-self",
@@ -964,7 +909,7 @@
         "Use the output array to store left products first, then multiply right products on the fly."
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].\n\nThe product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\n\nYou must write an algorithm that runs in O(n) time and without using the division operation.",
       "hasReadme": true,
@@ -982,6 +927,16 @@
           "path": "problems/0238-product-of-array-except-self/0238-product-of-array-except-self.java",
           "language": "Java",
           "filename": "0238-product-of-array-except-self.java"
+        },
+        {
+          "path": "problems/0238-product-of-array-except-self/ArrayOfProducts.java",
+          "language": "Java",
+          "filename": "ArrayOfProducts.java"
+        },
+        {
+          "path": "problems/0238-product-of-array-except-self/0238-product-of-array-except-self.py",
+          "language": "Python",
+          "filename": "0238-product-of-array-except-self.py"
         }
       ],
       "readme": "problems/0238-product-of-array-except-self/README.md",
@@ -1284,48 +1239,6 @@
       "problemNumberFormatted": "#027"
     },
     {
-      "id": "ArrayOfProducts",
-      "problemNumber": 28,
-      "title": "Array of Products",
-      "folder": "ArrayOfProducts",
-      "difficulty": "Medium",
-      "frequentlyAsked": true,
-      "topic": "Arrays & Hashing",
-      "pattern": "Prefix & Suffix Running Products",
-      "lcNumber": 238,
-      "lcTitle": "LC 238: Product of Array Except Self",
-      "lcUrl": "https://leetcode.com/problems/product-of-array-except-self/",
-      "hints": [
-        "Think of the product at index i as two halves: everything to the left of i, and everything to the right of i.",
-        "Fill the array with left running products first, then multiply right running products on a second backwards pass."
-      ],
-      "groups": [
-        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
-      ],
-      "prompt": "Write a function that takes in a non-empty array of integers and returns an array of the same length, where each element in the output array is equal to the product of every other number in the input array.\n\nIn other words, the value at output[i] is equal to the product of every number in the input array other than input[i].\n\nNote that you're expected to solve this problem without using division.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How do you compute an array of products where output[i] is the product of every other element without division?",
-        "concept": "Build the product of all elements to the left of i into products[i]. Then traverse backwards, maintaining a running rightProduct and multiplying products[i] *= rightProduct. Each element ends up as (product of left elements) * (product of right elements).",
-        "hints": "- **Hint 1**: Think of the product at index i as two halves: everything to the left of i, and everything to the right of i.\n- **Hint 2**: Fill the array with left running products first, then multiply right running products on a second backwards pass.",
-        "pattern": "**Pattern**: Prefix & Suffix Running Products\nUse when: Arrays & Hashing problems require efficient traversal or optimal sub-structure.",
-        "trick": "Keep running rightProduct in a single variable during the backwards pass to avoid allocating a second suffix array.",
-        "complexity": "Time: O(N) two linear passes. Space: O(N) for the output array (O(1) auxiliary space).",
-        "edgeCases": "- Arrays containing a single zero or multiple zeros.\n- Two element array [a, b] -> [b, a].\n- Arrays containing negative numbers."
-      },
-      "sources": [
-        {
-          "path": "problems/ArrayOfProducts/ArrayOfProducts.java",
-          "language": "Java",
-          "filename": "ArrayOfProducts.java"
-        }
-      ],
-      "readme": "problems/ArrayOfProducts/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/product-of-array-except-self/",
-      "problemNumberFormatted": "#028"
-    },
-    {
       "id": "BestSeat",
       "problemNumber": 29,
       "title": "Best Seat",
@@ -1576,48 +1489,6 @@
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/majority-element/",
       "problemNumberFormatted": "#034"
-    },
-    {
-      "id": "MergeOverlappinIntervals",
-      "problemNumber": 35,
-      "title": "Merge Overlapping Intervals",
-      "folder": "MergeOverlappinIntervals",
-      "difficulty": "Medium",
-      "frequentlyAsked": true,
-      "topic": "Intervals",
-      "pattern": "Sort by Start Time + Greedy Merge",
-      "lcNumber": 56,
-      "lcTitle": "LC 56: Merge Intervals",
-      "lcUrl": "https://leetcode.com/problems/merge-intervals/",
-      "hints": [
-        "Sorting by start time ensures any potentially overlapping intervals appear adjacent in the list.",
-        "Watch out for an interval that is completely contained within the previous one."
-      ],
-      "groups": [
-        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
-      ],
-      "prompt": "Write a function that takes in a non-empty array of arbitrary intervals, merges any overlapping intervals, and returns the new intervals in no particular order.\n\nEach interval interval is an array of two integers, with interval[0] as the start of the interval and interval[1] as the end of the interval.\n\nIntervals are considered overlapping if they share any portion of the number line. For example, [1, 3] and [2, 5] overlap because they share 2 and 3.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How do you merge overlapping intervals into an optimal set of disjoint intervals?",
-        "concept": "Sort intervals by start value. Initialize result with the first interval. For each subsequent interval, if its start <= currentMerged.end, merge by setting currentMerged.end = max(currentMerged.end, nextInterval.end). If its start > currentMerged.end, append nextInterval to result.",
-        "hints": "- **Hint 1**: Sorting by start time ensures any potentially overlapping intervals appear adjacent in the list.\n- **Hint 2**: Watch out for an interval that is completely contained within the previous one.",
-        "pattern": "**Pattern**: Sort by Start Time + Greedy Merge\nUse when: Intervals problems require efficient traversal or optimal sub-structure.",
-        "trick": "Always use max(currentMerged.end, nextInterval.end) so a shorter contained interval does not shrink the end.",
-        "complexity": "Time: O(N log N) for sorting. Space: O(N) for output array.",
-        "edgeCases": "- Intervals already non-overlapping.\n- One giant interval subsuming all others: [[1, 10], [2, 3], [4, 5]].\n- Intervals touching at endpoints: [[1, 2], [2, 3]] -> [[1, 3]]."
-      },
-      "sources": [
-        {
-          "path": "problems/MergeOverlappinIntervals/MergeOverlappinIntervals.java",
-          "language": "Java",
-          "filename": "MergeOverlappinIntervals.java"
-        }
-      ],
-      "readme": "problems/MergeOverlappinIntervals/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/merge-intervals/",
-      "problemNumberFormatted": "#035"
     },
     {
       "id": "MergeSort",
@@ -2124,90 +1995,6 @@
       "problemNumberFormatted": "#047"
     },
     {
-      "id": "TripleSum",
-      "problemNumber": 48,
-      "title": "Triple Sum",
-      "folder": "TripleSum",
-      "difficulty": "Medium",
-      "frequentlyAsked": true,
-      "topic": "Two Pointers",
-      "pattern": "Sort + Fixed Element + Two Pointers (3Sum)",
-      "lcNumber": 15,
-      "lcTitle": "LC 15: 3Sum",
-      "lcUrl": "https://leetcode.com/problems/3sum/",
-      "hints": [
-        "Sorting the array turns the 3-variable problem into N iterations of 2Sum.",
-        "Use two pointers converging from both ends of the remaining sub-array."
-      ],
-      "groups": [
-        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
-      ],
-      "prompt": "Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. The function should find all triplets in the array that sum up to the target sum and return a two-dimensional array of all these triplets. The numbers in each triplet should be ordered in ascending order, and the triplets themselves should be ordered in ascending order with respect to the numbers they hold.\n\nIf no three numbers sum up to the target sum, the function should return an empty array.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How do you find all triplets in an array that sum to a given target value in O(N^2) time?",
-        "concept": "Sort the array. Iterate i from 0 to n - 3. Set left = i + 1, right = n - 1. While left < right: currentSum = array[i] + array[left] + array[right]. If currentSum == target, append [array[i], array[left], array[right]], increment left, decrement right. If currentSum < target, increment left. If currentSum > target, decrement right.",
-        "hints": "- **Hint 1**: Sorting the array turns the 3-variable problem into N iterations of 2Sum.\n- **Hint 2**: Use two pointers converging from both ends of the remaining sub-array.",
-        "pattern": "**Pattern**: Sort + Fixed Element + Two Pointers (3Sum)\nUse when: Two Pointers problems require efficient traversal or optimal sub-structure.",
-        "trick": "Sorted array allows deterministic pointer movements: sum too small means left must advance; sum too large means right must decrement.",
-        "complexity": "Time: O(N^2) total (O(N log N) sort + O(N) iterations of O(N) two pointers). Space: O(N) to store triplets.",
-        "edgeCases": "- Target sum negative or zero.\n- Array with fewer than 3 elements: return empty list.\n- No triplet equals target."
-      },
-      "sources": [
-        {
-          "path": "problems/TripleSum/TripleSum.java",
-          "language": "Java",
-          "filename": "TripleSum.java"
-        }
-      ],
-      "readme": "problems/TripleSum/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/3sum/",
-      "problemNumberFormatted": "#048"
-    },
-    {
-      "id": "TwoSum",
-      "problemNumber": 49,
-      "title": "Two Sum",
-      "folder": "TwoSum",
-      "difficulty": "Easy",
-      "frequentlyAsked": true,
-      "topic": "Arrays & Hashing",
-      "pattern": "Hash Set / Map Complement Lookup",
-      "lcNumber": 1,
-      "lcTitle": "LC 1: Two Sum",
-      "lcUrl": "https://leetcode.com/problems/two-sum/",
-      "hints": [
-        "For each number x, what number y do you need such that x + y = target?",
-        "Store visited numbers in a hash table for instant O(1) membership checks."
-      ],
-      "groups": [
-        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
-      ],
-      "prompt": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
-      "hasReadme": true,
-      "notes": {
-        "recall": "How do you find two distinct numbers in an array that sum to a given target?",
-        "concept": "Use a hash set to store seen numbers. For each num in array, compute potentialMatch = target - num. If potentialMatch is in the hash set, return [potentialMatch, num]. Otherwise, add num to hash set.",
-        "hints": "- **Hint 1**: For each number x, what number y do you need such that x + y = target?\n- **Hint 2**: Store visited numbers in a hash table for instant O(1) membership checks.",
-        "pattern": "**Pattern**: Hash Set / Map Complement Lookup\nUse when: Arrays & Hashing problems require efficient traversal or optimal sub-structure.",
-        "trick": "Checking set membership before inserting the current number ensures we never pair a number with itself.",
-        "complexity": "Time: O(N) average time. Space: O(N) auxiliary space for the hash set.",
-        "edgeCases": "- Target can be formed by two identical numbers if array contains both: [3, 3] target 6.\n- No pair sums to target: return empty array."
-      },
-      "sources": [
-        {
-          "path": "problems/TwoSum/TwoSum.java",
-          "language": "Java",
-          "filename": "TwoSum.java"
-        }
-      ],
-      "readme": "problems/TwoSum/README.md",
-      "revisionFile": "REVISION.md",
-      "problemUrl": "https://leetcode.com/problems/two-sum/",
-      "problemNumberFormatted": "#049"
-    },
-    {
       "id": "ValidateSubsequence",
       "problemNumber": 50,
       "title": "Validate Subsequence",
@@ -2625,6 +2412,53 @@
       "readme": "problems/4. Count total set bits - GFG/README.md",
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/counting-bits/",
+      "problemNumberFormatted": "#059"
+    },
+    {
+      "id": "4. Who has the majority - GFG",
+      "problemNumber": 59,
+      "title": "Who Has the Majority",
+      "folder": "4. Who has the majority - GFG",
+      "difficulty": "Easy",
+      "frequentlyAsked": false,
+      "topic": "Arrays & Frequency Counting",
+      "pattern": "Dual Counter Frequency Comparison",
+      "lcNumber": 169,
+      "lcTitle": "LC 169: Majority Element",
+      "lcUrl": "https://leetcode.com/problems/majority-element/",
+      "hints": [
+        "You only care about two specific numbers, so you do not need a full hash map.",
+        "Single pass with two counters solves it in O(1) auxiliary space."
+      ],
+      "groups": [
+        "GeeksforGeeks"
+      ],
+      "prompt": "Given an array arr[] of size N and two elements x and y, use counter variables to find which element appears most in the array, x or y. If both elements have the same frequency, then return the smaller element.\n\nNote:  We need to return the element, not its count.",
+      "hasReadme": true,
+      "notes": {
+        "recall": "Given an array and two specific target values x and y, how do you find which has a higher frequency, breaking ties by returning the smaller value?",
+        "concept": "Iterate through the array once maintaining two counter variables, countX and countY. Increment countX when seeing x, and countY when seeing y. At the end, compare the two counts. If countX > countY return x; if countY > countX return y; if they are equal return min(x, y).",
+        "hints": "- **Hint 1**: You only care about two specific numbers, so you do not need a full hash map.\n- **Hint 2**: Single pass with two counters solves it in O(1) auxiliary space.",
+        "pattern": "**Pattern**: Dual Counter Frequency Comparison\nUse when: Frequency comparison is constrained to a fixed pair of candidate values.",
+        "trick": "When frequencies tie (countX == countY), the problem statement requires returning the smaller element: Math.min(x, y).",
+        "complexity": "Time: O(N) single pass through the array. Space: O(1) auxiliary space using two integer counters.",
+        "edgeCases": "- x or y does not appear at all (frequency 0).\n- Both have equal frequency: tie-break with min(x, y).\n- x == y: either branch correctly returns x."
+      },
+      "sources": [
+        {
+          "path": "problems/4. Who has the majority - GFG/MajorityWins.java",
+          "language": "Java",
+          "filename": "MajorityWins.java"
+        },
+        {
+          "path": "problems/4. Who has the majority - GFG/majority_wins.py",
+          "language": "Python",
+          "filename": "majority_wins.py"
+        }
+      ],
+      "readme": "problems/4. Who has the majority - GFG/README.md",
+      "revisionFile": "REVISION.md",
+      "problemUrl": "https://leetcode.com/problems/majority-element/",
       "problemNumberFormatted": "#059"
     },
     {

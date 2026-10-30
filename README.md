@@ -19,20 +19,20 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 ## 🧩 Core Patterns & Classic Problems
 
 ### Arrays & Two Pointers
-- [Two Sum](./problems/TwoSum/)
+- [Two Sum](./problems/0001-two-sum/)
 - [Sorted Squared Array](./problems/SortedSquaredArray/)
 - [Validate Subsequence](./problems/ValidateSubsequence/)
 - [Non-Constructible Change](./problems/NonConstructibleChange/)
 - [Tournament Winner](./problems/TournamentWinner/)
-- [Three Number Sum](./problems/TripleSum/)
+- [3Sum / Three Number Sum](./problems/0015-3sum/)
 - [Smallest Difference](./problems/SmallestDifference/)
 - [Move Element to End](./problems/MoveToEnd/)
 - [Monotonic Array](./problems/MonotonicArray/)
 - [Spiral Matrix Traversal](./problems/SpiralMatrixTraversal/)
 - [Longest Peak](./problems/LongestPeak/)
-- [Array of Products](./problems/ArrayOfProducts/)
+- [Product of Array Except Self](./problems/0238-product-of-array-except-self/)
 - [First Duplicate Value](./problems/FirstDuplicateValue/)
-- [Merge Overlapping Intervals](./problems/MergeOverlappinIntervals/)
+- [Merge Intervals](./problems/0056-merge-intervals/)
 - [Best Seat](./problems/BestSeat/)
 - [Zero Sum Subarray](./problems/ZeroSumSubArray/)
 - [Sweet and Savoury](./problems/SweetAndSavoury/)
@@ -103,13 +103,11 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0238-product-of-array-except-self) |
-| [ArrayOfProducts](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/ArrayOfProducts) |
 | [BestSeat](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/BestSeat) |
 | [CombinationSum](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/CombinationSum) |
 | [FirstDuplicateValue](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/FirstDuplicateValue) |
 | [LongestPeak](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/LongestPeak) |
 | [MajorityElement](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/MajorityElement) |
-| [MergeOverlappinIntervals](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/MergeOverlappinIntervals) |
 | [MonotonicArray](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/MonotonicArray) |
 | [MoveToEnd](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/MoveToEnd) |
 | [NonConstructibleChange](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/NonConstructibleChange) |
@@ -119,8 +117,6 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 | [SweetAndSavoury](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/SweetAndSavoury) |
 | [TournamentWinner](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/TournamentWinner) |
 | [TransposeMatrix](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/TransposeMatrix) |
-| [TripleSum](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/TripleSum) |
-| [TwoSum](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/TwoSum) |
 | [ValidateSubsequence](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/ValidateSubsequence) |
 | [ZeroSumSubArray](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/ZeroSumSubArray) |
 

@@ -1,5 +1,8 @@
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -44,7 +47,51 @@ class Solution {
     }
 
     /**
-     * Approach 3: Brute Force
+     * Approach 3: Two Pointers with Index Tracking
+     * Time Complexity: O(n log n) - sorting array of paired (value, originalIndex).
+     * Space Complexity: O(n) - for pair storage.
+     */
+    static int[] twoPointers(int[] nums, int target) {
+        int[][] pairs = new int[nums.length][2];
+        for (int i = 0; i < nums.length; i++) {
+            pairs[i][0] = nums[i];
+            pairs[i][1] = i;
+        }
+        Arrays.sort(pairs, (a, b) -> Integer.compare(a[0], b[0]));
+
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int sum = pairs[left][0] + pairs[right][0];
+            if (sum == target) {
+                return new int[]{pairs[left][1], pairs[right][1]};
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Approach 4: Hash Set (When returning values rather than indices)
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     */
+    static int[] twoSumValues(int[] nums, int target) {
+        Set<Integer> set = new HashSet<>();
+        for (int num : nums) {
+            int complement = target - num;
+            if (set.contains(complement)) {
+                return new int[]{complement, num};
+            }
+            set.add(num);
+        }
+        return null;
+    }
+
+    /**
+     * Approach 5: Brute Force
      * Time Complexity: O(n^2)
      * Space Complexity: O(1)
      */
