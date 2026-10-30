@@ -1,5 +1,7 @@
 # Ready, Set, Interview! 🚀
 
+[![Deploy GitHub Pages](https://github.com/ankitkashyap12/ready-set-interview/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ankitkashyap12/ready-set-interview/actions/workflows/deploy-pages.yml)
+
 A comprehensive repository and active recall revision platform for technical interview prep — covering Data Structures & Algorithms, System Design, and core problem-solving patterns.
 
 ---
