@@ -22,6 +22,7 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 
 ### Arrays & Two Pointers
 - [Two Sum](./problems/0001-two-sum/)
+- [Group Anagrams](./problems/0049-group-anagrams/)
 - [Sorted Squared Array](./problems/SortedSquaredArray/)
 - [Validate Subsequence](./problems/ValidateSubsequence/)
 - [Non-Constructible Change](./problems/NonConstructibleChange/)
@@ -129,6 +130,7 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 | ------- |
 | [0001-two-sum](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ankitkashyap12/ready-set-interview/tree/main/problems/0217-contains-duplicate) |
 
 ## Dynamic Programming

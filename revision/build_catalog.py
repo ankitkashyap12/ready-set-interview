@@ -59,16 +59,13 @@ SECTION_FILES = ("REVISION.md", "NOTES.md")
 
 FREQUENTLY_ASKED_FOLDERS = {
     "0001-two-sum",
-    "1-two-sum",
-    "TwoSum",
     "0003-longest-substring-without-repeating-characters",
     "0009-palindrome-number",
     "0011-container-with-most-water",
     "0015-3sum",
-    "TripleSum",
     "0020-valid-parentheses",
+    "0049-group-anagrams",
     "0056-merge-intervals",
-    "MergeOverlappinIntervals",
     "0075-sort-colors",
     "3_improving_quicksort",
     "0098-validate-binary-search-tree",

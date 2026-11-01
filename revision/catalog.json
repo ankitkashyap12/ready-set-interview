@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "problemCount": 97,
-  "sourceCount": 195,
+  "problemCount": 98,
+  "sourceCount": 197,
   "groups": [
     "GeeksforGeeks",
     "LeetCode",
@@ -58,6 +58,7 @@
     "Brian Kernighan's Algorithm on (a ^ b)",
     "Bucket Sort / Min-Heap by Frequency",
     "Canonical Coin Denominations Greedy Choice",
+    "Canonical Signature Hashing",
     "Concatenation Comparator Sort (ab vs ba)",
     "Contiguous Zero Block Maximization (Midpoint)",
     "Converging Two Pointers (In-place Swap)",
@@ -1218,7 +1219,7 @@
         "XORing indices 0..n and array elements together cancels out everything except the missing value."
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.",
       "hasReadme": true,
@@ -1262,7 +1263,7 @@
         "At each step, decide: start a new subarray at nums[i], or extend the existing one?"
       ],
       "groups": [
-        "LeetCode"
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
       ],
       "prompt": "Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.\n\nA subarray is a contiguous part of an array.",
       "hasReadme": true,
@@ -2078,6 +2079,55 @@
       "revisionFile": "REVISION.md",
       "problemUrl": "https://leetcode.com/problems/transpose-matrix/",
       "problemNumberFormatted": "#047"
+    },
+    {
+      "id": "0049-group-anagrams",
+      "problemNumber": 49,
+      "title": "Group Anagrams",
+      "folder": "0049-group-anagrams",
+      "difficulty": "Medium",
+      "frequentlyAsked": true,
+      "timeComplexity": "O(N * K)",
+      "spaceComplexity": "O(N * K)",
+      "topic": "Arrays & Hashing",
+      "pattern": "Canonical Signature Hashing",
+      "lcNumber": 49,
+      "lcTitle": "LC 49: Group Anagrams",
+      "lcUrl": "https://leetcode.com/problems/group-anagrams/",
+      "hints": [
+        "What invariant is shared by all words that are anagrams of each other?",
+        "If you map each word to its canonical representation (either sorted characters or a 26-element character count tuple), all anagrams will produce the identical key in a hash table."
+      ],
+      "groups": [
+        "🧩 Core Patterns & Classic Problems / Arrays & Two Pointers"
+      ],
+      "prompt": "Given an array of strings strs, group the anagrams together. You can return the answer in any order.",
+      "hasReadme": true,
+      "notes": {
+        "recall": "Given an array of strings, how do you group all anagrams together into sublists efficiently?",
+        "concept": "Anagrams share the exact same character counts. Two primary ways to form a canonical hash map key:\n1. **Sorted String Key**: Sort characters of each string (e.g. \"eat\" -> \"aet\"). Use the sorted string as the hash map key. Time: O(N * K log K).\n2. **Frequency Count Signature Key**: Count frequencies of each character 'a' through 'z' in an array of size 26. Convert the counts into a delimited string signature (e.g. \"1#0#0#...#1#0#\"). Use this as the map key. Time: O(N * K).",
+        "hints": "- **Hint 1**: What invariant is shared by all words that are anagrams of each other?\n- **Hint 2**: If you map each word to its canonical representation (either sorted characters or a 26-element character count tuple), all anagrams will produce the identical key in a hash table.",
+        "pattern": "**Pattern**: Canonical Signature Hashing\nUse when: Items belong to equivalence classes defined by permutation-invariant properties.",
+        "trick": "Using a fixed size array of 26 integers to build a count signature achieves linear O(N * K) time complexity, outperforming O(N * K log K) string sorting when strings are long.",
+        "complexity": "Time: O(N * K) using frequency signature or O(N * K log K) using character sorting, where N is the number of strings and K is the maximum length of a string. Space: O(N * K) auxiliary space to store the grouped strings in the hash map.",
+        "edgeCases": "- Array with empty strings: strs = [\"\"] -> [[\"\"]].\n- Array with single character strings: strs = [\"a\"] -> [[\"a\"]].\n- All words are distinct with no anagrams: each placed in its own individual list.\n- All words are anagrams of one another: all grouped into a single list."
+      },
+      "sources": [
+        {
+          "path": "problems/0049-group-anagrams/0049-group-anagrams.java",
+          "language": "Java",
+          "filename": "0049-group-anagrams.java"
+        },
+        {
+          "path": "problems/0049-group-anagrams/0049-group-anagrams.py",
+          "language": "Python",
+          "filename": "0049-group-anagrams.py"
+        }
+      ],
+      "readme": "problems/0049-group-anagrams/README.md",
+      "revisionFile": "REVISION.md",
+      "problemUrl": "https://leetcode.com/problems/group-anagrams/",
+      "problemNumberFormatted": "#049"
     },
     {
       "id": "ValidateSubsequence",
