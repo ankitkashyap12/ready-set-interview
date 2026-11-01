@@ -139,6 +139,23 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(card["lcNumber"], 11)
             self.assertEqual(card["lcUrl"], "https://leetcode.com/problems/container-with-most-water/")
 
+    def test_build_catalog_extracts_time_and_space_complexity(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            problem = root / "sample_problem"
+            problem.mkdir()
+            (problem / "Solution.java").write_text("class Solution {}\n", encoding="utf-8")
+            (problem / "REVISION.md").write_text(
+                "# Sample\n\n## Complexity\nTime: O(N log N) merge sort.\nSpace: O(N) auxiliary space.\n",
+                encoding="utf-8",
+            )
+            (root / "README.md").write_text("# Test\n", encoding="utf-8")
+
+            catalog = build_catalog(root)
+            card = catalog["cards"][0]
+            self.assertEqual(card["timeComplexity"], "O(N log N)")
+            self.assertEqual(card["spaceComplexity"], "O(N)")
+
 
 if __name__ == "__main__":
     unittest.main()

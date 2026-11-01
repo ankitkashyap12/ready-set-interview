@@ -53,6 +53,7 @@ const elements = {
   breadcrumb: document.querySelector("#card-breadcrumb"),
   cardDifficulty: document.querySelector("#card-difficulty"),
   cardFreqPill: document.querySelector("#card-freq-pill"),
+  cardComplexity: document.querySelector("#card-complexity"),
   cardLcPill: document.querySelector("#card-lc-pill"),
   cardLcText: document.querySelector("#card-lc-text"),
   cardNumber: document.querySelector("#card-number"),
@@ -559,9 +560,15 @@ function renderCard() {
     elements.cardFreqPill.hidden = true;
   }
 
-  // Topic and Pattern
+  // Topic, Pattern and Complexity
   elements.cardTopic.textContent = card.topic || "General";
   elements.cardPattern.textContent = card.pattern || "Pattern";
+  if (card.timeComplexity) {
+    elements.cardComplexity.hidden = false;
+    elements.cardComplexity.textContent = `⏱️ ${card.timeComplexity} · 💾 ${card.spaceComplexity || "O(1)"}`;
+  } else {
+    elements.cardComplexity.hidden = true;
+  }
 
   // LeetCode Pill
   if (card.lcUrl) {

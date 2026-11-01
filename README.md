@@ -39,6 +39,8 @@ See the [Revision Desk Guide](./revision/README.md) and [Agent Framework Protoco
 - [Zero Sum Subarray](./problems/ZeroSumSubArray/)
 - [Sweet and Savoury](./problems/SweetAndSavoury/)
 - [Majority Element](./problems/MajorityElement/)
+- [Missing Number](./problems/0268-missing-number/)
+- [Maximum Subarray (Kadane's Algorithm)](./problems/0053-maximum-subarray/)
 - [Transpose Matrix](./problems/TransposeMatrix/)
 
 ### Backtracking & Recursion

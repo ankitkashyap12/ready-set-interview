@@ -615,11 +615,14 @@ select {
 }
 .topic-badge { background: #f2f5ed; color: #3b5c32; border: 1px solid #e1e8d7; }
 .pattern-badge { background: #edf4fa; color: #215c8c; border: 1px solid #d4e4f2; }
+.complexity-badge { background: #fdf4ff; color: #86198f; border: 1px solid #f5d0fe; }
 
 [data-theme="dark"] .topic-badge,
 :root:not([data-theme="light"]) .topic-badge { background: #064e3b33; color: #34d399; border-color: #065f46; }
 [data-theme="dark"] .pattern-badge,
 :root:not([data-theme="light"]) .pattern-badge { background: #1e3a5f33; color: #38bdf8; border-color: #0369a1; }
+[data-theme="dark"] .complexity-badge,
+:root:not([data-theme="light"]) .complexity-badge { background: #581c8733; color: #e879f9; border-color: #7e22ce; }
 
 .card-content h2 {
   margin: 0 0 24px;

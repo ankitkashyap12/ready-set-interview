@@ -80,16 +80,14 @@ FREQUENTLY_ASKED_FOLDERS = {
     "0167-two-sum-ii-input-array-is-sorted",
     "0215-kth-largest-element-in-an-array",
     "0217-contains-duplicate",
-    "217-contains-duplicate",
     "0238-product-of-array-except-self",
-    "ArrayOfProducts",
     "0283-move-zeroes",
     "MoveToEnd",
     "0347-top-k-frequent-elements",
     "0875-koko-eating-bananas",
     "1448-count-good-nodes-in-binary-tree",
-    "268-missing-number",
-    "53-maximum-subarray",
+    "0268-missing-number",
+    "0053-maximum-subarray",
     "BestSeat",
     "CombinationSum",
     "FirstDuplicateValue",
@@ -451,6 +449,29 @@ def discover_cards(root: Path) -> list[dict[str, object]]:
 
         is_freq = (problem_dir.name in FREQUENTLY_ASKED_FOLDERS) or bool(meta.get("frequentlyAsked"))
 
+        raw_comp = notes.get("complexity", "")
+        time_m = re.search(r"Time:\s*([^.\n;]+)", raw_comp, re.IGNORECASE)
+        space_m = re.search(r"Space:\s*([^.\n;]+)", raw_comp, re.IGNORECASE)
+        time_comp = ""
+        space_comp = ""
+        if time_m:
+            time_part = time_m.group(1).strip()
+            big_o = re.search(r"O\([^\)]+\)", time_part)
+            time_comp = big_o.group(0) if big_o else time_part
+        elif raw_comp:
+            big_os = re.findall(r"O\([^\)]+\)", raw_comp)
+            if big_os:
+                time_comp = big_os[0]
+
+        if space_m:
+            space_part = space_m.group(1).strip()
+            big_o = re.search(r"O\([^\)]+\)", space_part)
+            space_comp = big_o.group(0) if big_o else space_part
+        elif raw_comp:
+            big_os = re.findall(r"O\([^\)]+\)", raw_comp)
+            if len(big_os) > 1:
+                space_comp = big_os[1]
+
         cards.append(
             {
                 "id": problem_dir.name,
@@ -459,6 +480,8 @@ def discover_cards(root: Path) -> list[dict[str, object]]:
                 "folder": problem_dir.name,
                 "difficulty": meta.get("difficulty") or "Medium",
                 "frequentlyAsked": is_freq,
+                "timeComplexity": time_comp or "O(N)",
+                "spaceComplexity": space_comp or "O(1)",
                 "topic": meta.get("topic") or (groups[0].split(" / ")[-1] if groups else "General"),
                 "pattern": meta.get("pattern") or (notes.get("pattern", "").split("\n")[0].replace("**Pattern**:", "").strip() if notes.get("pattern") else "General Technique"),
                 "lcNumber": meta.get("lcNumber"),
